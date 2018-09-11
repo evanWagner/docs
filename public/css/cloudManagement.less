@@ -1,0 +1,239 @@
+#top {
+    min-width: 1200px;
+}
+
+.title {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    h3 {
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 1;
+        color: #262626;
+    }
+    p {
+        font-size: 18px;
+        line-height: 1;
+        color: #999;
+        margin-top: 16px;
+        font-family: 'PingFangSC-Thin', 'PingFang SC Thin', 'PingFangSC', 'helvetica neue', 'hiragino sans gb', 'arial', 'microsoft yahei ui', 'microsoft yahei', 'simsun', 'sans-serif'!important;
+    }
+}
+
+.animated.info {
+    width: 525px;
+    position: absolute;
+    top: 170px;
+    left: 0;
+    h3 {
+        font-size: 42px;
+        color: #fff;
+    }
+    p {
+        font-size: 18px;
+        color: #fff;
+        margin-top: 35px;
+        line-height: 1.5;
+        font-family: 'PingFangSC-Thin', 'PingFang SC Thin', 'PingFangSC', 'helvetica neue', 'hiragino sans gb', 'arial', 'microsoft yahei ui', 'microsoft yahei', 'simsun', 'sans-serif'!important;
+    }
+}
+
+//banner
+.banner {
+    height: 500px;
+    box-sizing: border-box;
+    background-image: -webkit-linear-gradient(top, #0a2033, #0d2940);
+    background-image: -moz-linear-gradient(top, #0a2033, #0d2940);
+    background-image: -o-linear-gradient(top, #0a2033, #0d2940);
+    .w {
+        position: relative;
+        .info {
+            .tiyan {
+                width: 140px;
+                height: 44px;
+                line-height: 44px;
+                color: #fff;
+                text-align: center;
+                background-color: #30B5F2;
+                border-radius: 4px;
+                margin-top: 40px;
+                cursor: pointer;
+            }
+        }
+        .pic {
+            position: absolute;
+            width: 626px;
+            height: 380px;
+            right: -30px;
+            top: 85px;
+        }
+    }
+}
+
+//我们的理念
+.value {
+    .w {
+        .info {
+            border: 1px solid #E6E6E6;
+            border-radius: 8px;
+            box-sizing: border-box;
+            overflow: hidden;
+            ul {
+                li {
+                    float: left;
+                    box-sizing: border-box;
+                    width: 50%;
+                    padding-bottom: 40px;
+                    .img {
+                        height: 350px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        margin-bottom: 40px;
+                    }
+                    h5 {
+                        text-align: center;
+                        line-height: 1;
+                        margin-bottom: 20px;
+                        font-size: 18px;
+                        color: #333;
+                    }
+                    p {
+                        font-size: 14px;
+                        color: #6e6e6e;
+                        text-align: center;
+                        line-height: 1;
+                    }
+                    p:nth-child(4) {
+                        margin-top: 10px;
+                    }
+                }
+                li:nth-child(1) {
+                    position: relative;
+                    .img {
+                        background-image: url("../image/cloudManagement/1.png");
+                    }
+                    .dot {
+                        width: 30px;
+                        height: 30px;
+                        background-color: #fff;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: -15px;
+                    }
+                }
+                li:nth-child(2) {
+                    background-color: #F2F2F2;
+                    .img {
+                        background-image: url("../image/cloudManagement/2.png");
+                    }
+                }
+            }
+        }
+    }
+}
+
+//我们的能力
+.shop {
+    padding-bottom: 70px;
+    .w {
+        .tab {
+            border-bottom: 1px solid #E6E6E6;
+            position: relative;
+            height: 37px;
+            ul {
+                position: absolute;
+                left: 50%;
+                bottom: -1px;
+                transform: translateX(-50%);
+                li {
+                    float: left;
+                    padding-left: 35px;
+                    margin-right: 70px;
+                    height: 37px;
+                    box-sizing: border-box;
+                    border-bottom: 2px solid transparent;
+                    color: #262626;
+                    font-size: 18px;
+                    cursor: pointer;
+                }
+                li:nth-child(1) {
+                    background: url("../image/cloudManagement/3.png") no-repeat;
+                }
+                li:nth-child(2) {
+                    background: url("../image/cloudManagement/7.png") no-repeat;
+                }
+                li:nth-child(3) {
+                    background: url("../image/cloudManagement/8.png") no-repeat;
+                    margin-right: 0;
+                }
+                li:nth-child(1):hover,
+                li:nth-child(1).active {
+                    background: url("../image/cloudManagement/6.png") no-repeat;
+                    border-bottom: 2px solid #2FB5F2;
+                    color: #2FB5F2;
+                }
+                li:nth-child(2):hover,
+                li:nth-child(2).active {
+                    background: url("../image/cloudManagement/4.png") no-repeat;
+                    border-bottom: 2px solid #2FB5F2;
+                    color: #2FB5F2;
+                }
+                li:nth-child(3):hover,
+                li:nth-child(3).active {
+                    background: url("../image/cloudManagement/5.png") no-repeat;
+                    border-bottom: 2px solid #2FB5F2;
+                    color: #2FB5F2;
+                }
+            }
+        }
+        .tab-info {
+            ul {
+                li {
+                    padding-top: 30px;
+                    box-sizing: border-box;
+                    display: none;
+                    text-align: center;
+                    p {
+                        color: #6e6e6e;
+                        font-size: 14px;
+                        line-height: 1.6;
+                        text-align: left;
+                    }
+                    p:nth-child(2) {
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
+                    p:nth-child(3) {
+                        line-height: 1.5;
+                    }
+                    img {
+                        margin-top: 35px;
+                    }
+                }
+                li.active {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+//产品架构
+.productArchitecture {
+    padding-bottom: 70px;
+    background-color: #F5F5F5;
+    .w {
+        text-align: center;
+    }
+}
+
+//工具链
+.toolChain {
+    padding-bottom: 70px;
+    .w {
+        text-align: center;
+    }
+}

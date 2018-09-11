@@ -1,0 +1,448 @@
+//整体设置
+#top {
+    min-width: 1200px;
+}
+
+.title {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    .tit {
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 1;
+        color: #262626;
+    }
+    .des {
+        font-size: 18px;
+        line-height: 1;
+        color: #999;
+        margin-top: 16px;
+        font-family: 'PingFangSC-Thin', 'PingFang SC Thin', 'PingFangSC', 'helvetica neue', 'hiragino sans gb', 'arial', 'microsoft yahei ui', 'microsoft yahei', 'simsun', 'sans-serif'!important;
+    }
+}
+
+.animated.info {
+    width: 525px;
+    position: absolute;
+    top: 170px;
+    left: 0;
+    h3 {
+        font-size: 42px;
+        color: #fff;
+    }
+    p {
+        font-size: 18px;
+        color: #fff;
+        margin-top: 35px;
+        line-height: 1.5;
+        font-family: 'PingFangSC-Thin', 'PingFang SC Thin', 'PingFangSC', 'helvetica neue', 'hiragino sans gb', 'arial', 'microsoft yahei ui', 'microsoft yahei', 'simsun', 'sans-serif'!important;
+    }
+}
+
+//banner
+.banner {
+    position: relative;
+    height: 500px;
+    box-sizing: border-box;
+    background-image: -webkit-linear-gradient(top, #0a2033, #0d2940);
+    background-image: -moz-linear-gradient(top, #0a2033, #0d2940);
+    background-image: -o-linear-gradient(top, #0a2033, #0d2940);
+    .w {
+        position: relative;
+        .pic {
+            position: absolute;
+            width: 566px;
+            height: 400px;
+            right: -30px;
+            top: 82px;
+
+        }
+    }
+}
+
+//平台价值
+.value {
+    padding-bottom: 70px;
+    .clearfix {
+        width: 1200px;
+        .item {
+            display: inline-block;
+            float: left;
+            margin: 0;
+            padding: 0;
+            width: 25%;
+            text-align: center;
+            img {
+                margin-bottom: 20px;
+                transition: transform .3s;
+                -webkit-transition: transform .3s;
+                -moz-transition: transform .3s;
+                -o-transition: transform .3s;
+                transform: translate(0, 0);
+            }
+            p {
+                font-size: 25px;
+                color: #005AA9;
+                margin-bottom: 15px;
+                span {
+                    font-size: 34px;
+                    color: #005AAA;
+                }
+            }
+            i {
+                font-size: 18px;
+                color: #333;
+            }
+        }
+    }
+}
+
+//平台框架
+.framework {
+    background: #f5f5f5;
+    padding-bottom: 70px;
+    .info {
+        width: 1200px;
+        text-align: center;
+        img {
+            display: inline-block;
+        }
+    }
+}
+
+//设备联接
+.device {
+    background: #fff;
+    padding-bottom: 70px;
+    .info {
+        width: 1200px;
+        text-align: center;
+        img {
+            display: inline-block;
+        }
+    }
+}
+
+//IoT数据储存
+.storage {
+    background: #f5f5f5;
+    padding-bottom: 50px;
+    .title {
+        padding-bottom: 0;
+    }
+    .info {
+        position: relative;
+        width: 1200px;
+        height: 460px;
+        margin-top: 30px;
+        text-align: center;
+        img {
+            display: inline-block;
+        }
+        .infoi {
+            position: absolute;
+            width: 51px;
+            height: 51px;
+            border-radius: 50%;
+            padding: 13px;
+            transition: transform 1s;
+            -webkit-transition: transform 1s;
+            -o-transition: transform 1s;
+            -moz-transition: transform 1s;
+        }
+        .infoi:hover {
+            transform: rotate(-180deg);
+            -ms-transform: rotate(-180deg);
+            /* IE 9 */
+            -webkit-transform: rotate(-180deg);
+            /* Safari and Chrome */
+        }
+        .infoi1 {
+            top: 19px;
+            left: 558px;
+        }
+        .infoi2 {
+            top: 83px;
+            left: 323px;
+        }
+        .infoi3 {
+            top: 85px;
+            left: 802px;
+        }
+        .infoi4 {
+            top: 316px;
+            left: 815px;
+        }
+        .infoi5 {
+            top: 316px;
+            left: 316px;
+        }
+        .infof {
+            position: absolute;
+            transition: color .5s;
+            -webkit-transition: color .5s;
+            -moz-transition: color .5s;
+            -o-transition: color .5s;
+            color: #333;
+        }
+        .infof:hover {
+            color: #2e6aa8;
+        }
+        .infof1 {
+            top: 45px;
+            left: 647px;
+        }
+        .infof2 {
+            top: 169px;
+            left: 323px;
+        }
+        .infof3 {
+            top: 169px;
+            left: 816px;
+        }
+        .infof4 {
+            top: 400px;
+            left: 821px;
+        }
+        .infof5 {
+            top: 400px;
+            left: 308px;
+        }
+    }
+}
+
+//IoT数据处理
+.processing {
+    background: #fff;
+    padding-bottom: 70px;
+    .info {
+        position: relative;
+        width: 1200px;
+        text-align: center;
+        img {
+            display: inline-block;
+        }
+        .div {
+            position: relative;
+            float: left;
+            width: 398px;
+            height: 193px;
+            border: 1px solid #ddd;
+            transition: all .2s;
+            -webkit-transition: all .2s;
+            -moz-transition: all .2s;
+            -o-transition: all .2s;
+            z-index: 1;
+            background: #fff;
+            .img {
+                position: absolute;
+                left: 50px;
+                top: 60px;
+                width: 80px;
+                height: 80px;
+                transition: all .2s;
+                -webkit-transition: all .2s;
+                -moz-transition: all .2s;
+                -o-transition: all .2s;
+                background: url("../image/iot/iot35.png") center no-repeat;
+            }
+            .tit {
+                position: absolute;
+                left: 180px;
+                top: 86px;
+                font-size: 20px;
+                color: #333;
+            }
+        }
+        .div:nth-child(1) {
+            border-top-left-radius: 8px;
+        }
+        .div:nth-child(2) {
+            margin-left: -1px;
+            .img {
+                background: url("../image/iot/iot29.png") center no-repeat;
+            }
+        }
+        .div:nth-child(3) {
+            border-top-right-radius: 8px;
+            margin-left: -1px;
+            .img {
+                background: url("../image/iot/iot25.png") center no-repeat;
+            }
+        }
+        .div:nth-child(4) {
+            border-bottom-left-radius: 8px;
+            margin-top: -1px;
+            .img {
+                background: url("../image/iot/iot33.png") center no-repeat;
+            }
+        }
+        .div:nth-child(5) {
+            margin-top: -1px;
+            margin-left: -1px;
+            .img {
+                background: url("../image/iot/iot31.png") center no-repeat;
+            }
+        }
+        .div:nth-child(6) {
+            border-bottom-right-radius: 8px;
+            margin-top: -1px;
+            margin-left: -1px;
+            .img {
+                background: url("../image/iot/iot27.png") center no-repeat;
+            }
+        }
+        .div:hover {
+            z-index: 20;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+            -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+            .img {
+                background: url("../image/iot/iot36.png") center no-repeat;
+            }
+        }
+        .div:hover:nth-child(2) {
+            .img {
+                background: url("../image/iot/iot30.png") center no-repeat;
+            }
+        }
+        .div:hover:nth-child(3) {
+            .img {
+                background: url("../image/iot/iot26.png") center no-repeat;
+            }
+        }
+        .div:hover:nth-child(4) {
+            .img {
+                background: url("../image/iot/iot34.png") center no-repeat;
+            }
+        }
+        .div:hover:nth-child(5) {
+            .img {
+                background: url("../image/iot/iot32.png") center no-repeat;
+            }
+        }
+        .div:hover:nth-child(6) {
+            .img {
+                background: url("../image/iot/iot28.png") center no-repeat;
+            }
+        }
+    }
+}
+
+//应用场景
+.scene {
+    background: #193854;
+    padding-bottom: 70px;
+    .title {
+        .tit {
+            color: #fff;
+        }
+        .des {
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+    .info {
+        position: relative;
+        width: 1200px;
+        height: 450px;
+        text-align: center;
+        .div {
+            position: relative;
+            float: left;
+            width: 301px;
+            height: 450px;
+            z-index: 1;
+            background: url("../image/iot/iot37.png") no-repeat;
+            overflow: hidden;
+            .divtit {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                transition: all .3s;
+                -webkit-transition: all .3s;
+                -moz-transition: all .3s;
+                -o-transition: all .3s;
+                opacity: 0;
+                background: url("../image/iot/iot45.png") no-repeat;
+                .divtitchi {
+                    width: 100%;
+                    height: 100%;
+                    background: url("../image/iot/iot46.png") no-repeat;
+                }
+            }
+            .cotbox {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+            .cot {
+                margin: 140px auto 0;
+                width: 250px;
+                height: 220px;
+                transition: all .3s;
+                -webkit-transition: all .3s;
+                -moz-transition: all .3s;
+                -o-transition: all .3s;
+                .img {
+                    width: 100%;
+                    height: 72px;
+                    margin-bottom: 30px;
+                    background: url("../image/iot/iot43.png") center no-repeat;
+                }
+                .tit {
+                    font-size: 24px;
+                    color: #fff;
+                    font-weight: 500;
+                    margin-bottom: 30px;
+                }
+                .des {
+                    display: none;
+                    font-size: 14px;
+                    color: #fff;
+                }
+            }
+        }
+        .div:nth-child(2) {
+            width: 299px;
+            background: url("../image/iot/iot38.png") no-repeat;
+            .cot {
+                .img {
+                    background: url("../image/iot/iot41.png") center no-repeat;
+                }
+            }
+        }
+        .div:nth-child(3) {
+            width: 300px;
+            background: url("../image/iot/iot39.png") no-repeat;
+            .cot {
+                .img {
+                    background: url("../image/iot/iot44.png") center no-repeat;
+                }
+            }
+        }
+        .div:nth-child(4) {
+            width: 300px;
+            background: url("../image/iot/iot40.png") no-repeat;
+            .cot {
+                .img {
+                    background: url("../image/iot/iot42.png") center no-repeat;
+                }
+            }
+        }
+        .div:hover {
+            .divtit {
+                width: 100%;
+                height: 100%;
+                opacity: 1;
+            }
+            .cot {
+                margin-top: 115px;
+                .des {
+                    display: block;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>用docker构建angular前端应用 - COSMOPlat-平台指南</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u7528docker\u6784\u5efaangular\u524d\u7aef\u5e94\u7528";
+    var mkdocs_page_input_path = "\u5f00\u53d1\u6307\u5357/\u7528docker\u6784\u5efaangular\u524d\u7aef\u5e94\u7528.md";
+    var mkdocs_page_url = "/\u5f00\u53d1\u6307\u5357/\u7528docker\u6784\u5efaangular\u524d\u7aef\u5e94\u7528/";
+  </script>
+
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../目录/" class="icon icon-home"> COSMOPlat-平台指南</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+
+
+            <li class="toctree-l1">
+
+    <a class="" href="../../目录/">目录</a>
+	    </li>
+
+
+            <li class="toctree-l1">
+
+    <span class="caption-text">开发指南</span>
+    <ul class="subnav">
+                <li class="">
+
+    <a class="" href="../概述/">概述</a>
+                </li>
+                <li class="">
+
+    <a class="" href="../平台使用手册/">平台使用手册</a>
+                </li>
+                <li class="">
+
+    <a class="" href="../SpringCloud微服务docker容器化最佳实践/">SpringCloud微服务docker容器化最佳实践</a>
+                </li>
+                <li class="">
+
+    <a class="" href="../python开发者的docker之旅/">python开发者的docker之旅</a>
+                </li>
+                <li class="">
+
+    <a class="" href="../php开发者的docker之旅/">php开发者的docker之旅</a>
+                </li>
+                <li class=" current">
+
+    <a class="current" href="./">用docker构建angular前端应用</a>
+    <ul class="subnav">
+
+    <li class="toctree-l3"><a href="#angular">Angular应用搭建</a></li>
+
+
+    <li class="toctree-l3"><a href="#dockerfile">Dockerfile 编写</a></li>
+
+
+    <li class="toctree-l3"><a href="#docker-image">构建 Docker Image</a></li>
+
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../目录/">COSMOPlat-平台指南</a>
+      </nav>
+
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../目录/">Docs</a> &raquo;</li>
+
+
+
+          <li>开发指南 &raquo;</li>
+
+
+
+    <li>用docker构建angular前端应用</li>
+    <li class="wy-breadcrumbs-aside">
+
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+
+                <p>用Docker 搭建Angular 前端应用</p>
+<h2 id="angular">Angular应用搭建</h2>
+<ul>
+<li>首先，借助 generator-gulp-angular 生成一个 Angular 应用。具体操作是:</li>
+</ul>
+<p><code>npm install -g yo gulp bower</code></p>
+<p><code>npm install -g generator-gulp-angular</code></p>
+<p><code>yo gulp-angular</code></p>
+<blockquote>
+<p>值得注意的是：</p>
+<blockquote>
+<p>项目依赖 node bower gulp</p>
+<p>调试命令 gulp serve</p>
+<p>调试发布命令 gulp serve:dist</p>
+<p>构建命令 gulp build</p>
+<p>构建目录 /dist</p>
+<p>构建出来的是纯静态文件</p>
+</blockquote>
+<p>该应用有个小问题，fonts 文件在 build 之后就不显示了，需要修改 bower.json 。</p>
+</blockquote>
+<pre><code>{
+ "dependencies": {
+     .....
+   },
+ "overrides": {
+     "bootstrap-sass-official": {
+       "main": [
+         "assets/stylesheets/_bootstrap.scss",
+         "assets/fonts/bootstrap/glyphicons-halflings-regular.eot",
+         "assets/fonts/bootstrap/glyphicons-halflings-regular.svg",
+         "assets/fonts/bootstrap/glyphicons-halflings-regular.ttf",
+         "assets/fonts/bootstrap/glyphicons-halflings-regular.woff",
+         "assets/fonts/bootstrap/glyphicons-halflings-regular.woff2"
+       ]
+     }
+   }
+ }
+</code></pre>
+<h2 id="dockerfile">Dockerfile 编写</h2>
+<p>首先，选择官方的 node 镜像作为项目的基础镜像。一般采用 node:0.12.7-wheezy ，不会缺少各种各样的东西。</p>
+<p><code>FROM node:0.12.7-wheezy</code></p>
+<p><code>MAINTAINER YeTing "me@yeting.info"</code></p>
+<p>其次，由于该项目生成是纯静态文件，我们需要 Nginx 来作为 Web 服务器。</p>
+<p><code>RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 573BFD6B3D8FBC641079A6ABABF5BD827BD9BF62</code>
+<code>RUN echo "deb http://nginx.org/packages/mainline/debian/ wheezy nginx" &gt;&gt; /etc/apt/sources.list ENV NGINX_VERSION 1.7.12-1~wheezy RUN apt-get update &amp;&amp; \ apt-get install -y ca-certificates nginx &amp;&amp; \ rm -rf /var/lib/apt/lists/*</code></p>
+<p>forward request and error logs to docker log collector</p>
+<p><code>RUN ln -sf /dev/stdout /var/log/nginx/access.log</code></p>
+<p><code>RUN ln -sf /dev/stderr /var/log/nginx/error.log</code></p>
+<p><code>EXPOSE 80</code></p>
+<ul>
+<li>Web 根目录 /usr/share/nginx/html </li>
+<li>访问日志输出到了标准输出，可通过 docker logs  查看</li>
+<li>暴露 80 端口</li>
+</ul>
+<p>接着，下载项目所需的依赖工具 bower、gulp。</p>
+<p><code>RUN npm install -g bower gulp</code></p>
+<p><code>WORKDIR /app</code></p>
+<p>紧接着，优先将 ./package.json  和 ./bower.json  复制到镜像中，预先加载第三方依赖。</p>
+<p><code>COPY ./package.json /app/</code></p>
+<p><code>COPY ./bower.json /app/</code></p>
+<p><code>RUN npm install &amp;&amp; bower install --allow-root</code></p>
+<p>bower 默认不允许 Root 权限运行，所以要加入 --allow-root  参数。
+然后，执行 Angular 构建命令，将构建生成的静态文件复制到 Web 根目录。</p>
+<p><code>COPY . /app/</code></p>
+<p><code>RUN gulp build</code></p>
+<p><code>RUN cp -R /app/dist/*  /usr/share/nginx/html</code></p>
+<p>最后，设置 Docker 默认运行命令，启动 Nginx 为前台运行。</p>
+<p><code>CMD ["nginx", "-g", "daemon off;"]</code></p>
+<p>Nginx 设置为前台运行主要是为了 Docker 容器启动不中断。</p>
+<h2 id="docker-image">构建 Docker Image</h2>
+<p>完整的 Dockerfile</p>
+<pre><code>FROM node:0.12.7-wheezy
+
+MAINTAINER YeTing "me@yeting.info"
+
+RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 573BFD6B3D8FBC641079A6ABABF5BD827BD9BF62
+RUN echo "deb http://nginx.org/packages/mainline/debian/ wheezy nginx" &gt;&gt; /etc/apt/sources.list
+
+ENV NGINX_VERSION 1.7.12-1~wheezy
+
+RUN apt-get update &amp;&amp; \
+    apt-get install -y ca-certificates nginx &amp;&amp; \
+    rm -rf /var/lib/apt/lists/*
+
+# forward request and error logs to docker log collector
+RUN ln -sf /dev/stdout /var/log/nginx/access.log
+RUN ln -sf /dev/stderr /var/log/nginx/error.log
+
+EXPOSE 80
+
+RUN npm install -g bower gulp
+
+WORKDIR /app
+
+COPY ./package.json /app/
+COPY ./bower.json /app/
+RUN npm install &amp;&amp; bower install --allow-root
+
+COPY . /app/
+
+RUN gulp build
+
+RUN cp -R /app/dist/*  /usr/share/nginx/html
+
+CMD ["nginx", "-g", "daemon off;"]
+</code></pre>
+<p>有了 Dockerfile 以后，我们可以运行下面的命令构建前端镜像并命名为 my-angular-app：</p>
+<p><code>docker build -t my-angular-app .</code></p>
+<p>部署 Docker Image</p>
+<p>最后，让我们从镜像启动容器：</p>
+<p><code>docker run -p 80:80 my-angular-app</code></p>
+<p>这样子我们就能从 80 端口去访问我们的 Angular 应用。
+非常好，我们现在已经得到了一个优良的 Angular Docker Seed，快来加入你的逻辑去完成你的 Angular 应用吧。</p>
+
+            </div>
+          </div>
+          <footer>
+
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+
+
+        <a href="../php开发者的docker之旅/" class="btn btn-neutral" title="php开发者的docker之旅"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+
+    </div>
+
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+
+  </div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+
+
+        <span><a href="../php开发者的docker之旅/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+
+
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/require.js"></script>
+      <script src="../../search/search.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,576 @@
+#top {
+  min-width: 1200px;
+}
+.title {
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+.title h3 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1;
+  color: #262626;
+}
+.title p {
+  font-size: 18px;
+  line-height: 1;
+  color: #999;
+  margin-top: 16px;
+  font-family: 'PingFangSC-Thin', 'PingFang SC Thin', 'PingFangSC', 'helvetica neue', 'hiragino sans gb', 'arial', 'microsoft yahei ui', 'microsoft yahei', 'simsun', 'sans-serif' !important;
+}
+.animated.info {
+  width: 525px;
+  position: absolute;
+  top: 170px;
+  left: 0;
+}
+.animated.info h3 {
+  font-size: 42px;
+  color: #fff;
+}
+.animated.info p {
+  font-size: 18px;
+  color: #fff;
+  margin-top: 35px;
+  line-height: 1.5;
+  font-family: 'PingFangSC-Thin', 'PingFang SC Thin', 'PingFangSC', 'helvetica neue', 'hiragino sans gb', 'arial', 'microsoft yahei ui', 'microsoft yahei', 'simsun', 'sans-serif' !important;
+}
+.banner {
+  height: 500px;
+  box-sizing: border-box;
+  background-image: -webkit-linear-gradient(top, #0a2033, #0d2940);
+  background-image: -moz-linear-gradient(top, #0a2033, #0d2940);
+  background-image: -o-linear-gradient(top, #0a2033, #0d2940);
+}
+.banner .w {
+  position: relative;
+}
+.banner .w .info .tiyan {
+  width: 140px;
+  height: 44px;
+  line-height: 44px;
+  color: #fff;
+  text-align: center;
+  background-color: #30B4F2;
+  border-radius: 4px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.banner .w .pic {
+  position: absolute;
+  width: 650px;
+  height: 360px;
+  right: -90px;
+  top: 95px;
+}
+.appmarket {
+  padding-bottom: 70px;
+}
+.appmarket .w .info {
+  border: 1px solid #E6E6E6;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.appmarket .w .info .tab {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 220px;
+  border-right: 1px solid #E6E6E6;
+  float: left;
+  box-sizing: border-box;
+}
+.appmarket .w .info .tab li {
+  border-bottom: 1px solid #ebebeb;
+  box-sizing: border-box;
+  line-height: 90px;
+  text-align: center;
+  color: #6e6e6e;
+  font-size: 16px;
+  background: url("../image/cloudMarket/1.png") no-repeat 136px center;
+  cursor: pointer;
+}
+.appmarket .w .info .tab li:hover,
+.appmarket .w .info .tab li.active {
+  color: #30B5F2;
+  background: url("../image/cloudMarket/2.png") no-repeat 136px center;
+}
+.appmarket .w .info .tab li:first-child {
+  position: relative;
+}
+.appmarket .w .info .tab li:first-child .line {
+  width: 1px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  right: -21px;
+  background-color: #fff;
+}
+.appmarket .w .info .tab li:last-child {
+  border-bottom: none;
+  position: relative;
+}
+.appmarket .w .info .tab li:last-child .line {
+  width: 1px;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  right: -21px;
+  background-color: #fff;
+}
+.appmarket .w .info .tab-info {
+  float: left;
+  padding: 50px;
+  box-sizing: border-box;
+  width: 978px;
+}
+.appmarket .w .info .tab-info .tab-item {
+  display: none;
+}
+.appmarket .w .info .tab-info .tab-item .content .content-info {
+  float: left;
+  width: 650px;
+}
+.appmarket .w .info .tab-info .tab-item .content .content-info h5 {
+  height: 42px;
+  font-size: 24px;
+  color: #262626;
+}
+.appmarket .w .info .tab-info .tab-item .content .content-info p {
+  line-height: 1.4;
+  font-size: 14px;
+  color: #6e6e6e;
+}
+.appmarket .w .info .tab-info .tab-item .content .content-info a {
+  color: #30b5f2;
+  margin-top: 10px;
+  display: inline-block;
+  font-size: 14px;
+}
+.appmarket .w .info .tab-info .tab-item .content img {
+  float: right;
+}
+.appmarket .w .info .tab-info .tab-item .application {
+  margin-top: 50px;
+}
+.appmarket .w .info .tab-info .tab-item .application .tit {
+  border-bottom: 1px solid #E6E6E6;
+  height: 32px;
+  font-size: 16px;
+  color: #262626;
+}
+.appmarket .w .info .tab-info .tab-item .application .items {
+  padding-top: 24px;
+}
+.appmarket .w .info .tab-info .tab-item .application .items li {
+  width: 91px;
+  text-align: center;
+  margin-right: 40px;
+  float: left;
+}
+.appmarket .w .info .tab-info .tab-item .application .items li p {
+  color: #6e6e6e;
+  line-height: 1;
+  margin-top: 15px;
+  font-size: 14px;
+}
+.appmarket .w .info .tab-info .tab-item .application .items li img {
+  width: 91px;
+  height: 91px;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.appmarket .w .info .tab-info .tab-item .application .items li a {
+  line-height: 91px;
+  color: #30b5f2;
+  font-size: 14px;
+}
+.appmarket .w .info .tab-info .tab-item .application .items li:last-child {
+  margin-right: 0;
+}
+.appmarket .w .info .tab-info .tab-item:nth-child(1) .application .items li img {
+  border: 1px solid #A6A6A6;
+}
+.appmarket .w .info .tab-info .tab-item:nth-child(2) .application .items li img {
+  border: 1px solid #A6A6A6;
+}
+.appmarket .w .info .tab-info .tab-item:nth-child(4) .application .items li:nth-child(4) img {
+  border: 1px solid #A6A6A6;
+}
+.appmarket .w .info .tab-info .tab-item:nth-child(4) .application .items li:nth-child(5) img {
+  border: 1px solid #A6A6A6;
+}
+.appmarket .w .info .tab-info .tab-item:nth-child(4) .application .items li:nth-child(6) img {
+  border: 1px solid #A6A6A6;
+}
+.appmarket .w .info .tab-info .tab-item:nth-child(5) .application .items li img {
+  border: 1px solid #A6A6A6;
+}
+.appmarket .w .info .tab-info .tab-item.active {
+  display: block;
+}
+.apimarket {
+  padding-bottom: 70px;
+  background-color: #F5F5F5;
+}
+.apimarket .w ul li {
+  width: 220px;
+  background-color: #fff;
+  border: 1px solid #E6E6E6;
+  box-sizing: border-box;
+  float: left;
+  border-radius: 8px;
+  position: relative;
+  text-align: center;
+  line-height: 1;
+  overflow: hidden;
+  margin-right: 25px;
+  padding-bottom: 24px;
+}
+.apimarket .w ul li img {
+  margin-top: 59px;
+  margin-bottom: 25px;
+}
+.apimarket .w ul li h5 {
+  font-size: 16px;
+  color: #262626;
+}
+.apimarket .w ul li p {
+  margin-top: 8px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  color: #6e6e6e;
+}
+.apimarket .w ul li .apply {
+  width: 100px;
+  height: 34px;
+  line-height: 34px;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #30B4F2;
+  margin: 0 auto;
+  font-size: 14px;
+  cursor: pointer;
+}
+.apimarket .w ul li .tip {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 13px;
+  padding-left: 15px;
+  padding-right: 15px;
+  line-height: 35px;
+  border-bottom-left-radius: 10px;
+}
+.apimarket .w ul li:nth-child(1) .tip {
+  background-color: #e0ebf5;
+  color: #005aaa;
+}
+.apimarket .w ul li:nth-child(2) .tip {
+  background-color: #DAF3FF;
+  color: #30b5f2;
+}
+.apimarket .w ul li:nth-child(3) .tip {
+  background-color: #ecf3da;
+  color: #96ba34;
+}
+.apimarket .w ul li:nth-child(4) .tip {
+  background-color: #FEEEDC;
+  color: #F8A03C;
+}
+.apimarket .w ul li:nth-child(5) {
+  margin-right: 0;
+}
+.apimarket .w ul li:nth-child(5) .tip {
+  background-color: #F9E3E3;
+  color: #D33636;
+}
+.apimarket .w ul li:nth-child(6) {
+  margin-top: 24px;
+}
+.apimarket .w ul li:nth-child(6) .tip {
+  background-color: #ecf3da;
+  color: #96ba34;
+}
+.apimarket .w ul li:nth-child(7) {
+  margin-top: 24px;
+}
+.apimarket .w ul li:nth-child(7) .tip {
+  background-color: #FEEEDC;
+  color: #F8A03C;
+}
+.apimarket .w ul li:nth-child(8) {
+  margin-top: 24px;
+}
+.apimarket .w ul li:nth-child(8) .tip {
+  background-color: #F9E3E3;
+  color: #D33636;
+}
+.apimarket .w ul li:nth-child(9) {
+  margin-top: 24px;
+}
+.apimarket .w ul li:nth-child(9) .tip {
+  background-color: #e0ebf5;
+  color: #005aaa;
+}
+.apimarket .w ul li:nth-child(10) {
+  margin-top: 24px;
+  margin-right: 0;
+}
+.apimarket .w ul li:nth-child(10) .tip {
+  background-color: #DAF3FF;
+  color: #30b5f2;
+}
+.basicResources {
+  padding-bottom: 70px;
+}
+.basicResources .title {
+  padding-bottom: 0;
+}
+.basicResources .w h3 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #262626;
+  line-height: 1;
+}
+.basicResources .w .d-resource li {
+  float: left;
+  width: 282px;
+  border: 1px solid #E6E6E6;
+  border-radius: 8px;
+  margin-right: 24px;
+  box-sizing: border-box;
+}
+.basicResources .w .d-resource li .tit {
+  line-height: 64px;
+  background-color: #F0F0F0;
+  text-align: center;
+  font-size: 16px;
+  color: #262626;
+}
+.basicResources .w .d-resource li .info {
+  padding-left: 24px;
+  padding-right: 20px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  color: #6e6e6e;
+  height: 57px;
+}
+.basicResources .w .d-resource li .use {
+  width: 140px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  color: #fff;
+  background-color: #005aaa;
+  border-radius: 4px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+.basicResources .w .d-resource li:last-child {
+  margin-right: 0;
+}
+.basicResources .w .b-resource li {
+  border: 1px solid #E6E6E6;
+  border-radius: 8px;
+  background-color: #F0F0F0;
+  box-sizing: border-box;
+  float: left;
+  width: 588px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 50px;
+}
+.basicResources .w .b-resource li .top {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.basicResources .w .b-resource li .top .tit {
+  margin-bottom: 14px;
+  line-height: 1;
+  font-size: 20px;
+  color: #262626;
+}
+.basicResources .w .b-resource li .top .des {
+  line-height: 1;
+  font-size: 15px;
+  color: #999;
+}
+.basicResources .w .b-resource li .content .item {
+  line-height: 1;
+  margin-bottom: 24px;
+}
+.basicResources .w .b-resource li .content .item h5 {
+  font-size: 16px;
+  color: #262626;
+}
+.basicResources .w .b-resource li .content .item p {
+  line-height: 1.5;
+  font-size: 13px;
+  color: #6e6e6e;
+  margin-top: 15px;
+}
+.basicResources .w .b-resource li .content .item:nth-child(3) {
+  margin-bottom: 0;
+}
+.basicResources .w .b-resource li .go {
+  width: 190px;
+  height: 48px;
+  line-height: 48px;
+  color: #fff;
+  text-align: center;
+  background-color: #30B5F2;
+  border-radius: 4px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+.basicResources .w .b-resource li:nth-child(1) {
+  margin-right: 24px;
+}
+.basicResources .w .b-resource li:nth-child(1) .content .item {
+  width: 247px;
+  float: left;
+}
+.basicResources .w .b-resource li:nth-child(1) .content .item:nth-child(1) {
+  margin-right: 40px;
+}
+.basicResources .w .b-resource li:nth-child(1) .content .item:nth-child(3) {
+  margin-right: 40px;
+}
+.basicResources .w .b-resource li:nth-child(1) .content .item:nth-child(5) {
+  margin-right: 40px;
+  margin-bottom: 0;
+}
+.basicResources .w .b-resource li:nth-child(1) .content .item:nth-child(6) {
+  margin-bottom: 0;
+}
+.basicResources .w .b-resource li:nth-child(2) .content .item {
+  line-height: 1;
+  margin-bottom: 24px;
+}
+.basicResources .w .b-resource li:nth-child(2) .content .item:nth-child(3) {
+  margin-bottom: 0;
+}
+.basicResources .w .y-resource .item {
+  float: left;
+  width: 384px;
+  border: 1px solid #E6E6E6;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+.basicResources .w .y-resource .item .tit {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #262626;
+  cursor: pointer;
+}
+.basicResources .w .y-resource .item .info ul {
+  float: left;
+  box-sizing: border-box;
+  padding-left: 50px;
+  width: 50%;
+}
+.basicResources .w .y-resource .item .info ul li {
+  padding-left: 32px;
+  font-size: 14px;
+  color: #666;
+  height: 22px;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+.basicResources .w .y-resource .item .info ul li:last-child {
+  margin-bottom: 0;
+}
+.basicResources .w .y-resource .item .info ul:nth-child(1) {
+  border-right: 1px solid #e6e6e6;
+}
+.basicResources .w .y-resource .item .info ul:nth-child(1) li:nth-child(1) {
+  background: url("../image/cloudMarket/30.png") no-repeat;
+}
+.basicResources .w .y-resource .item .info ul:nth-child(1) li:nth-child(2) {
+  background: url("../image/cloudMarket/31.png") no-repeat;
+}
+.basicResources .w .y-resource .item .info ul:nth-child(1) li:nth-child(3) {
+  background: url("../image/cloudMarket/32.png") no-repeat;
+}
+.basicResources .w .y-resource .item .info ul:nth-child(1) li:nth-child(4) {
+  background: url("../image/cloudMarket/33.png") no-repeat;
+}
+.basicResources .w .y-resource .item .info ul:nth-child(2) {
+  padding-left: 45px;
+}
+.basicResources .w .y-resource .item .info ul:nth-child(2) li:nth-child(1) {
+  background: url("../image/cloudMarket/34.png") no-repeat;
+}
+.basicResources .w .y-resource .item .info ul:nth-child(2) li:nth-child(2) {
+  background: url("../image/cloudMarket/35.png") no-repeat;
+}
+.basicResources .w .y-resource .item .info ul:nth-child(2) li:nth-child(3) {
+  background: url("../image/cloudMarket/36.png") no-repeat;
+}
+.basicResources .w .y-resource .item .info ul:nth-child(2) li:nth-child(4) {
+  background: url("../image/cloudMarket/37.png") no-repeat;
+}
+.basicResources .w .y-resource .item:nth-child(2) {
+  margin-left: 24px;
+}
+.basicResources .w .y-resource .item:nth-child(2) .info ul:nth-child(1) li:nth-child(1) {
+  background: url("../image/cloudMarket/38.png") no-repeat;
+}
+.basicResources .w .y-resource .item:nth-child(2) .info ul:nth-child(1) li:nth-child(2) {
+  background: url("../image/cloudMarket/39.png") no-repeat;
+}
+.basicResources .w .y-resource .item:nth-child(2) .info ul:nth-child(1) li:nth-child(3) {
+  background: url("../image/cloudMarket/40.png") no-repeat;
+}
+.basicResources .w .y-resource .item:nth-child(2) .info ul:nth-child(1) li:nth-child(4) {
+  background: url("../image/cloudMarket/41.png") no-repeat;
+}
+.basicResources .w .y-resource .item:nth-child(2) .info ul:nth-child(2) li:nth-child(1) {
+  background: url("../image/cloudMarket/42.png") no-repeat;
+}
+.basicResources .w .y-resource .item:nth-child(2) .info ul:nth-child(2) li:nth-child(2) {
+  background: url("../image/cloudMarket/43.png") no-repeat;
+}
+.basicResources .w .y-resource .item:nth-child(2) .info ul:nth-child(2) li:nth-child(3) {
+  background: url("../image/cloudMarket/44.png") no-repeat;
+}
+.basicResources .w .y-resource .item:nth-child(2) .info ul:nth-child(2) li:nth-child(4) {
+  background: url("../image/cloudMarket/45.png") no-repeat;
+}
+.basicResources .w .y-resource .item:nth-child(3) {
+  margin-left: 24px;
+}
+.basicResources .w .y-resource .item:nth-child(3) .info ul:nth-child(1) li:nth-child(1) {
+  background: url("../image/cloudMarket/46.png") no-repeat;
+}
+.basicResources .w .y-resource .item:nth-child(3) .info ul:nth-child(1) li:nth-child(2) {
+  background: url("../image/cloudMarket/47.png") no-repeat;
+}
+.basicResources .w .y-resource .item:nth-child(3) .info ul:nth-child(1) li:nth-child(3) {
+  background: url("../image/cloudMarket/48.png") no-repeat;
+}
+.basicResources .w .y-resource .item:nth-child(3) .info ul:nth-child(1) li:nth-child(4) {
+  background: url("../image/cloudMarket/49.png") no-repeat;
+}
+.basicResources .w .y-resource .item:nth-child(3) .info ul:nth-child(2) li:nth-child(1) {
+  background: url("../image/cloudMarket/50.png") no-repeat;
+}
+.basicResources .w .y-resource .item:nth-child(3) .info ul:nth-child(2) li:nth-child(2) {
+  background: url("../image/cloudMarket/51.png") no-repeat;
+}
+.basicResources .w .y-resource .item:nth-child(3) .info ul:nth-child(2) li:nth-child(3) {
+  background: url("../image/cloudMarket/52.png") no-repeat;
+}
+.basicResources .w .y-resource .item:nth-child(3) .info ul:nth-child(2) li:nth-child(4) {
+  background: url("../image/cloudMarket/53.png") no-repeat;
+}

@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>平台使用手册 - COSMOPlat-平台指南</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u5e73\u53f0\u4f7f\u7528\u624b\u518c";
+    var mkdocs_page_input_path = "\u5f00\u53d1\u6307\u5357/\u5e73\u53f0\u4f7f\u7528\u624b\u518c.md";
+    var mkdocs_page_url = "/\u5f00\u53d1\u6307\u5357/\u5e73\u53f0\u4f7f\u7528\u624b\u518c/";
+  </script>
+
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../目录/" class="icon icon-home"> COSMOPlat-平台指南</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+
+
+            <li class="toctree-l1">
+
+    <a class="" href="../../目录/">目录</a>
+	    </li>
+
+
+            <li class="toctree-l1">
+
+    <span class="caption-text">开发指南</span>
+    <ul class="subnav">
+                <li class="">
+
+    <a class="" href="../概述/">概述</a>
+                </li>
+                <li class=" current">
+
+    <a class="current" href="./">平台使用手册</a>
+    <ul class="subnav">
+
+    <li class="toctree-l3"><a href="#cosmoplat">COSMOPlat 开发者平台介绍</a></li>
+
+
+    <li class="toctree-l3"><a href="#_1">系统使用</a></li>
+
+
+    <li class="toctree-l3"><a href="#_2">应用开发</a></li>
+
+
+    <li class="toctree-l3"><a href="#_3">部署应用</a></li>
+
+
+    <li class="toctree-l3"><a href="#_4">域名访问</a></li>
+
+
+    </ul>
+                </li>
+                <li class="">
+
+    <a class="" href="../SpringCloud微服务docker容器化最佳实践/">SpringCloud微服务docker容器化最佳实践</a>
+                </li>
+                <li class="">
+
+    <a class="" href="../python开发者的docker之旅/">python开发者的docker之旅</a>
+                </li>
+                <li class="">
+
+    <a class="" href="../php开发者的docker之旅/">php开发者的docker之旅</a>
+                </li>
+                <li class="">
+
+    <a class="" href="../用docker构建angular前端应用/">用docker构建angular前端应用</a>
+                </li>
+    </ul>
+	    </li>
+
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../目录/">COSMOPlat-平台指南</a>
+      </nav>
+
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../目录/">Docs</a> &raquo;</li>
+
+
+
+          <li>开发指南 &raquo;</li>
+
+
+
+    <li>平台使用手册</li>
+    <li class="wy-breadcrumbs-aside">
+
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+
+                <h2 id="cosmoplat">COSMOPlat 开发者平台介绍</h2>
+<p>COSMOPlat 开发者平台以工业为中心的云计算新模式,工业互联网应用的完整生命周期。 具体优势:</p>
+<blockquote>
+<blockquote>
+<ul>
+<li>
+<p>微服务--针对工业互联网业务的特点设计的普适性应用架构原则和最佳实践</p>
+</li>
+<li>
+<p>DevOps--用最小化的代价帮助工业企业互联网业务开发进入高效的协作模式</p>
+</li>
+<li>
+<p>持续创新--获得持续迭代的创新交付能力和永久可用的业务连续性</p>
+</li>
+<li>
+<p>自动运维--将传统的基础架构一步带入谷歌级别的云化数据中心时代</p>
+</li>
+<li>
+<p>数据驱动--即时的用户反馈和精准的用户画像，让数据驱动产品运营和创新</p>
+</li>
+</ul>
+</blockquote>
+<p>COSMOPlat 开发者平台为开发模式带来了革命性的升级，对接代码仓库，自动化测试和构建，加速 研发交付流程，让代码承载业务的脉动，快速推向市场;</p>
+<p>COSMOPlat 开发者平台变革了应用交付，以容器为标准交付件，打造企业应用商店，实现复杂分布 式应用的秒级部署，打开拥抱互联网能力的大门;</p>
+<p>COSMOPlat 开发者平台重构了数据中心，让软件定义一切，充分利用企业的存量 IT 资产，打造面 向未来的计算平台，为创新插上计算的翅膀;</p>
+<p>COSMOPlat 开发者平台致力创造客户价值，一切以客户为中心，让每一次沟通都产生价值，让客户 的参与感驱动产品迭代，数据驱动的精益运营，塑造全新的极致体验。</p>
+</blockquote>
+<h2 id="_1">系统使用</h2>
+<p>COSMOPlat 开发者平台接入总体流程:注册开发者账号---登录开发者平台---通过 webchat 申请镜 像空间---上传镜像---创建应用模板---通过模板部署应用---添加 7 层负载---访问应用</p>
+<blockquote>
+<p>导航栏主要功能按钮</p>
+<blockquote>
+<ul>
+<li>
+<p>应用:最终部署到 COSMOPlat 开发者平台上的具体应用，对应 k8s 中的 deployment </p>
+</li>
+<li>
+<p>应用模板:COSMOPlat 开发者平台的模板机制，模板通过变量传参，一次定义重复使用 </p>
+</li>
+<li>
+<p>4 层负载均衡:内部应用间访问的入口</p>
+</li>
+<li>
+<p>7 层负载堪称:以域名的形式暴露应用访问入口，支持多域名和 uri </p>
+</li>
+<li>
+<p>存储卷:对有持久化需要的应用可以申请一定大小的存储卷 </p>
+</li>
+<li>
+<p>配置管理:用于分离应用配置文件，配置文件可以外挂到应用 </p>
+</li>
+<li>
+<p>安全中心:修改用户自身密码</p>
+</li>
+</ul>
+</blockquote>
+</blockquote>
+<p>1,登陆访问系统</p>
+<blockquote>
+<p><img alt="访问 COSMOPlat 官网 http://www.COSMOPlat.com" src="../../images/cos-login.png" /></p>
+</blockquote>
+<p>点击开发者平台</p>
+<blockquote>
+<p><img alt="点击开发者平台" src="../../images/developer.png" /></p>
+</blockquote>
+<p>如果己有账号，请直接点击登录，如果没有账号，可以点击注册成为开发者:</p>
+<blockquote>
+<p><img alt="login" src="../../images/uc-login.png" /></p>
+<p><img alt="register" src="../../images/uc-register.png" /></p>
+</blockquote>
+<ul>
+<li>密码:密码强度至少 10 个字符，且包含大小写、数字及特殊字符</li>
+</ul>
+<p>邮箱:可用邮箱，用来激活账号，开发者预览版无此步骤</p>
+<p>新注册账号或已有账号可点击登录进入登录页面</p>
+<blockquote>
+<p><img alt="uc-login-ex" src="../../images/uc-login-ex.png" /></p>
+</blockquote>
+<p>输入用户名密码点击登录，进入开发者平台:</p>
+<blockquote>
+<p><img alt="uc-cos-console" src="../../images/uc-cos-console.png" /></p>
+</blockquote>
+<p>2,镜像管理</p>
+<p>针对所有用户可用的公有镜像可以直接使用，但没有修改及删除权限。如果需要上传自定义镜像， 则需要通过 COSMOPlat 开发者平台上 webchat 工具联系客户人员，
+确认需求和权限后开通指定的镜像空 间，该空间对用户是全权限。</p>
+<p>本地镜像可以直接 docker push，也可通过 git 等 SCM 工具直接打包上传到镜像空间。后文会对自 定义镜像作详细阐述。</p>
+<p>3,应用管理</p>
+<p>COSMOPlat 开发者平台可能直接创建，删除，停止应用</p>
+<h2 id="_2">应用开发</h2>
+<p>推荐使用 linux 版 Docker CE</p>
+<ul>
+<li>
+<p>docker for linux</p>
+<p>cat &lt;<EOF > /etc/yum.repos.d/docker-ce.repo
+[docker-ce]
+name = docker-ce
+baseurl = https://mirrors.aliyun.com/docker-ce/linux/centos/7/x86_64/stable gpgcheck = 0
+enable = 1
+EOF
+yum -y install docker-ce-17.03.2.ce
+cat &gt; /etc/docker/daemon.json &lt;&lt;-EOF {
+"insecure-registries": [ "0.0.0.0/0"] }
+EOF
+systemctl start docker systemctl enable docker</p>
+</li>
+<li>
+<p>docker for mac</p>
+</li>
+</ul>
+<blockquote>
+<p><img alt="docker-for-mac" src="../../images/docker-for-mac.png" /></p>
+</blockquote>
+<p>加添 insecure registries 条目 0.0.0.0/0 后重启 docker</p>
+<blockquote>
+<p><img alt="conf-docker-for-mac" src="../../images/conf-docker-for-mac.png" /></p>
+</blockquote>
+<ul>
+<li>docker for windows</li>
+</ul>
+<p>加添 insecure registries 条目 0.0.0.0/0 后重启 docker</p>
+<blockquote>
+<p><img alt="conf-docker-for-win" src="../../images/conf-docker-for-win.png" /></p>
+</blockquote>
+<ul>
+<li>
+<p>编写 Dockerfile</p>
+<p>FROM <image>[:<tag>] # 选择基础镜像 ADD <src> <dest> # 将主机文件拷贝至镜像 ENV <key> <value> # 声明环境变量
+RUN <command> # 容器内执行命令 EXPOSE <port> # 暴露端口
+ENTRYPOINT ["executable", "param1", "param2"] CMD ["executable","param1","param2"]</p>
+</li>
+</ul>
+<p>容器内默认执行进程ENTRYPOINT + CMD，docker run 最后加的命令替换CMD</p>
+<p>镜像层次尽可能少</p>
+<p>Dockerfile, 以tomcat为例</p>
+<pre><code>FROM ubuntu:16.04
+ADD *.tar.gz /var/tmp/
+ADD tomcat /var/tmp/tomcat
+ADD *.war /htdocs/war/
+ADD WEB-INF/ /htdocs/WEB-INF
+RUN echo 'deb http://mirrors.163.com/ubuntu/ xenial main restricted universe multiverse\n\
+deb http://mirrors.163.com/ubuntu/ xenial-security main restricted universe multiverse\n\
+deb http://mirrors.163.com/ubuntu/ xenial-updates main restricted universe multiverse\n\
+deb http://mirrors.163.com/ubuntu/ xenial-proposed main restricted universe multiverse\n\
+deb http://mirrors.163.com/ubuntu/ xenial-backports main restricted universe multiverse' &gt; /etc/apt/sources.list \
+&amp;&amp; apt-get update &amp;&amp; apt-get -y install unzip telnet dnsutils net-tools curl \ &amp;&amp; mkdir -p /data/www/kstore/upload \
+&amp;&amp; mv /var/tmp/apache-tomcat-7.0.81 /data/Tomcat \
+&amp;&amp; mv /var/tmp/jdk1.8.0_112 /data/jdk8 \
+&amp;&amp; sh -x /var/tmp/tomcat \
+&amp;&amp; echo 'export JAVA_HOME=/data/jdk8\n\
+export PATH=${JAVA_HOME}/bin:${PATH}\n\
+export CLASSPATH=${JAVA_HOME}/lib:${CLASSPATH}' &gt;&gt; /etc/profile
+ENV JAVA_HOME=/data/jdk8
+ENV PATH=${JAVA_HOME}/bin:${PATH}
+EXPOSE 8000/TCP 8043/TCP
+ENTRYPOINT ["/data/Tomcat/bin/catalina.sh", "run"]
+</code></pre>
+<ul>
+<li>
+<p>编译镜像</p>
+<p>docker build -t kstore-tomcat:0.1 .
+-t # 镜像名称:标签
+. # 表示使用当前目录下的 Dockerfile, 还可以通过-f 指定 Dockerfile 所在路径</p>
+</li>
+<li>
+<p>上传镜像到镜像仓库</p>
+</li>
+</ul>
+<p>申请上传镜像权限 点击右下角，联系客服:</p>
+<blockquote>
+<p><img alt="contact" src="../../images/contact.png" /></p>
+</blockquote>
+<p>弹出对话框，跟客服申请上传镜像权限:</p>
+<blockquote>
+<p><img alt="contact-haier" src="../../images/contact-haier.png" /></p>
+</blockquote>
+<p>等运维人员开通上传权限后，就可以上传镜像了。</p>
+<p>镜像空间名和标签命名建议规范，标签名建议不要打latest，同一个标签不要打两遍。镜像 和代码版本关联，发布回退版本即镜像升级与回滚。</p>
+<p>镜像名格式:&lt;仓库地址&gt;/&lt;空间名或组织名&gt;/&lt;镜像名&gt;:&lt;标签&gt;</p>
+<p><code>docker tag kstore-tomcat:0.1 10.138.227.158/COSMOPlat-dev-test/kstore-tomcat:0.1 docker push 10.138.227.158/ COSMOPlat-dev-test /kstore-tomcat:0.1</code></p>
+<ul>
+<li>创建应用模板</li>
+</ul>
+<p>应用模板规范遵循 k8s 模板规范。</p>
+<blockquote>
+<p><img alt="template" src="../../images/template.png" /></p>
+</blockquote>
+<p>外挂配置文件的应用需要提前定义 ConfigMap</p>
+<blockquote>
+<p><img alt="template-spec" src="../../images/template-spec.png" /></p>
+</blockquote>
+<p>配置管理--配置文件--创建配置文件</p>
+<blockquote>
+<p><img alt="configmap" src="../../images/configmap.png" /></p>
+<p><img alt="view-config" src="../../images/view-config.png" /></p>
+</blockquote>
+<p>页面支持直接修改</p>
+<blockquote>
+<p><img alt="edit-config" src="../../images/edit-config.png" /></p>
+</blockquote>
+<p>k8s yml模板，以elasticsearch为例</p>
+<pre><code>apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: {{ APP_NAME }}
+  labels:
+    app: {{ APP_NAME }}
+spec:
+  template:
+    metadata:
+      name: {{ APP_NAME }}
+      labels:
+        app: {{ APP_NAME }}
+    spec:
+      nodeSelector:
+        zone: qianmi
+      containers:
+      - name: {{ APP_NAME }}
+        image: {{DOCKER_IMAGE}}
+        ports:
+        - containerPort: 9200
+        - containerPort: 9300
+        - containerPort: 22
+        env:
+          - name: NAMESPACE
+            value: {{ NAMESPACE }}
+        volumeMounts:
+        - name: data-volume
+          mountPath: /data/elasticsearch/data
+        - name: config-volume
+          mountPath: /data/elasticsearch/config/elasticsearch.yml
+          subPath: elasticsearch.yml
+      volumes:
+      - name: data-volume
+        hostPath:
+          path: /data/elasticsearch/data
+      - name: config-volume
+        configMap:
+          name: qianmi-elasticsearch
+          items:
+          - key: elasticsearch.yml
+            path: elasticsearch.yml
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ APP_NAME }}
+spec:
+  type: NodePort
+  ports:
+  - port: 9200
+    protocol: TCP
+    name: elasticsearch-1
+  - port: 9300
+    protocol: TCP
+    name: elasticsearch-2
+  - port: 22
+    protocol: TCP
+    name: elasticsearch-3
+    nodePort: 30091
+  selector:
+    app: {{ APP_NAME }}
+</code></pre>
+<p>configMap/secret的挂载是完全覆盖容器中的target目录，这一点很重要</p>
+<p>典型场景:挂多个配置文件到容器指定位置</p>
+<p>configMap文件qianmi-elasticsearch中如果有多个文件可以通过列表形式的key/path来定义,如果/data/elasticsearch/config/目录为空，可以直接将整个config-volume直接挂载到对应目录</p>
+<pre><code>        volumeMounts:
+        - name: config-volume
+          mountPath: /data/elasticsearch/config/
+      volumes:
+      - name: config-volume
+        configMap:
+          name: qianmi-elasticsearch
+          items:
+          - key: elasticsearch.yml
+            path: elasticsearch.yml
+          - key: logging.yml
+            path: logging.yml
+</code></pre>
+<p>如果/data/elasticsearch/config/目录不为空，直接将config-volume挂上去类似linux下的目录mount，源目录会完全被卷覆盖，所以需要精确挂载(subPath)，示例如下：</p>
+<pre><code>    volumeMounts:
+    - name: config-volume
+      mountPath: /data/elasticsearch/config/elasticsearch.yml
+      subPath: elasticsearch.yml
+    - name: config-volume
+      mountPath: /data/elasticsearch/config/logging.yml
+      subPath: logging.yml
+  volumes:
+  - name: config-volume
+    configMap:
+      name: qianmi-elasticsearch
+      items:
+      - key: elasticsearch.yml
+        path: elasticsearch.yml
+      - key: logging.yml
+        path: logging.yml
+</code></pre>
+<p>这样就完成了整个应用的开发工作</p>
+<h2 id="_3">部署应用</h2>
+<p>开发者平台支持多种方式部署应用，我们这里逐一介绍，实际使用任选一种即可。</p>
+<blockquote>
+<p>一键部署(模板)</p>
+<blockquote>
+<p>点击应用-&gt;部署应用，弹出部署应用对话框，选择一键部署，点击继续。</p>
+</blockquote>
+<p><img alt="deploy-app" src="../../images/deploy-app.png" /></p>
+</blockquote>
+<p>点击继续之后我们可以看到所有可用的应用模板，如下：</p>
+<blockquote>
+<p><img alt="click-deploy" src="../../images/click-deploy.png" /></p>
+</blockquote>
+<p>我们以wordpress为例介绍一键部署应用：</p>
+<p>在搜索框搜索wordpress，会搜索到wordpress的应用模板，选中该应用模板，点击继续：</p>
+<blockquote>
+<p><img alt="wordpress" src="../../images/wordpress.png" /></p>
+</blockquote>
+<p>这里可以设置应用名和数据库密码，设置之后，点击继续：</p>
+<blockquote>
+<p><img alt="wordpress-db" src="../../images/wordpress-db.png" /></p>
+</blockquote>
+<p>检查镜像并部署：</p>
+<blockquote>
+<p><img alt="deploy-wordpress" src="../../images/deplpoy-wordpress.png" /></p>
+</blockquote>
+<p>当看到所有组件状态正常后即完成应用的部署：</p>
+<blockquote>
+<p><img alt="check-wordpress" src="../../images/check-wordpress.png" /></p>
+<p>基础镜像包</p>
+<p><img alt="basic-image" src="../../images/basic-image.png" /></p>
+<p><img alt="basic-image01" src="../../images/basic-image01.png" /></p>
+</blockquote>
+<p>支持主流的开发语系，选择需要的版本后“继续”</p>
+<blockquote>
+<p><img alt="image-01" src="../../images/image-01.png" /></p>
+</blockquote>
+<p>支持本地上传和url获取代码</p>
+<blockquote>
+<p><img alt="image-02" src="../../images/image-02.png" /></p>
+</blockquote>
+<p>应用名对应k8s中的deployment
+服务名对应k8s中的service name
+镜像空间根据用户授权来选择
+镜像名自定义
+生成镜像版本为docker镜像的tag
+实例数是真实容器运行的副本数</p>
+<blockquote>
+<p><img alt="image-03" src="../../images/image-03.png" /></p>
+</blockquote>
+<p>应用cpu,内存资源限制</p>
+<blockquote>
+<p><img alt="image-04" src="../../images/image-04.png" /></p>
+</blockquote>
+<p>4层负载均衡微调页面
+两种访问方式(NodePort, ClusterIP)
+端口和选择器为必填项，前端与k8s service定义对应关系可参考如下模板</p>
+<pre><code>apiVersion: v1
+kind: Service
+metadata:
+  name: pythonsample-pythonsample-5000
+  labels:
+    app: pythonsample-pythonsample
+spec:
+  type: NodePort
+  ports:
+  - port: 5000
+  selector:
+    app: pythonsample-pythonsample
+</code></pre>
+<blockquote>
+<p><img alt="image-05" src="../../images/image-05.png" /></p>
+</blockquote>
+<p>如果己安装好ingress模块，则可一并配置好7层负载均衡</p>
+<blockquote>
+<p><img alt="image-06" src="../../images/image-06.png" /></p>
+</blockquote>
+<p>存储卷指事先定义好的 pvc，可随容器漂移而漂移。
+文件系统映射是直接将宿主机的某个目录映射到容器的某个目录，数据不会随容器漂移而漂移</p>
+<blockquote>
+<p><img alt="image-07" src="../../images/image-07.png" /></p>
+</blockquote>
+<p>调度策略
+任意主机: 集群内可用的任意主机
+指定标签下的任意主机：集群内可用的带有某一标签的主机
+指定的主机：直接指定集群内一台或多台主机
+其它：容器组亲和性和容器组反亲和性</p>
+<p>发布策略
+推荐滚动发布</p>
+<p>高可用默认开启</p>
+<blockquote>
+<p><img alt="image-08" src="../../images/image-08.png" /></p>
+</blockquote>
+<p>可以指定容器运行的entrypoint/cmd及运行时的环境变量或配置文件</p>
+<blockquote>
+<p><img alt="image-09" src="../../images/image-09.png" /></p>
+<p>通过镜像部署</p>
+<p><img alt="image-10" src="../../images/image-10.png" /></p>
+<p><img alt="image-11" src="../../images/image-11.png" /></p>
+</blockquote>
+<p>选择待部署的镜像，之后的步骤同“一键部署”</p>
+<ul>
+<li>通过YAML编排应用</li>
+</ul>
+<blockquote>
+<p><img alt="image-12" src="../../images/image-12.png" /></p>
+</blockquote>
+<p>该种方式为原生k8s模板</p>
+<blockquote>
+<p><img alt="image-13" src="../../images/image-13.png" /></p>
+</blockquote>
+<p>语法检测通过后会开始部署应用</p>
+<h2 id="_4">域名访问</h2>
+<p>完成应用的部署工作之后，应用是以内网IP和端口号的形式暴露服务，外网还是无法使用的。如果需要对外暴露服务，需要我们添加7层负载均衡服务。</p>
+<blockquote>
+<p>添加7层负载均衡服务</p>
+<blockquote>
+<p>点击负载均衡-&gt;添加7层负载均衡，弹出添加7层负载均衡对话框。</p>
+</blockquote>
+<p><img alt="image-14" src="../../images/image-14.png" /></p>
+</blockquote>
+<p>弹出对话框后填写相关信息，点击确定：</p>
+<blockquote>
+<p><img alt="image-15" src="../../images/image-15.png" /></p>
+</blockquote>
+<p>之后会跳转到如下页面，可以看到7层负载均衡创建成功。</p>
+<blockquote>
+<p>访问应用</p>
+</blockquote>
+<p>这样我们就可以使用7层负载均衡的域名来访问应用：</p>
+<blockquote>
+<p><img alt="image-16" src="../../images/image-16.png" /></p>
+</blockquote>
+
+            </div>
+          </div>
+          <footer>
+
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+
+        <a href="../SpringCloud微服务docker容器化最佳实践/" class="btn btn-neutral float-right" title="SpringCloud微服务docker容器化最佳实践">Next <span class="icon icon-circle-arrow-right"></span></a>
+
+
+        <a href="../概述/" class="btn btn-neutral" title="概述"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+
+    </div>
+
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+
+  </div>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+
+
+        <span><a href="../概述/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+
+
+        <span style="margin-left: 15px"><a href="../SpringCloud微服务docker容器化最佳实践/" style="color: #fcfcfc">Next &raquo;</a></span>
+
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/require.js"></script>
+      <script src="../../search/search.js"></script>
+
+</body>
+</html>

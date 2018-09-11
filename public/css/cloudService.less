@@ -1,0 +1,639 @@
+//整体设置
+#top {
+    min-width: 1200px;
+}
+
+.title {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    .tit {
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 1;
+        color: #262626;
+    }
+    .des {
+        font-size: 18px;
+        line-height: 1;
+        color: #999;
+        margin-top: 16px;
+        font-family: 'PingFangSC-Thin', 'PingFang SC Thin', 'PingFangSC', 'helvetica neue', 'hiragino sans gb', 'arial', 'microsoft yahei ui', 'microsoft yahei', 'simsun', 'sans-serif'!important;
+    }
+}
+
+.animated.info {
+    width: 525px;
+    position: absolute;
+    top: 170px;
+    left: 0;
+    h3 {
+        font-size: 42px;
+        color: #fff;
+    }
+    p {
+        font-size: 18px;
+        color: #fff;
+        margin-top: 35px;
+        line-height: 1.5;
+        font-family: 'PingFangSC-Thin', 'PingFang SC Thin', 'PingFangSC', 'helvetica neue', 'hiragino sans gb', 'arial', 'microsoft yahei ui', 'microsoft yahei', 'simsun', 'sans-serif'!important;
+    }
+}
+
+//banner
+.banner {
+    position: relative;
+    height: 500px;
+    box-sizing: border-box;
+    background-image: -webkit-linear-gradient(top, #0a2033, #0d2940);
+    background-image: -moz-linear-gradient(top, #0a2033, #0d2940);
+    background-image: -o-linear-gradient(top, #0a2033, #0d2940);
+    .w {
+        position: relative;
+        .pic {
+            position: absolute;
+            width: 500px;
+            height: 350px;
+            right: -20px;
+            top:110px;
+        }
+    }
+}
+//平台价值
+.value {
+    padding-bottom: 70px;
+    .clearfix {
+        .item {
+            display: inline-block;
+            float: left;
+            margin: 0;
+            padding: 0;
+            width: 25%;
+            text-align: center;
+            img {
+                margin-bottom: 10px;
+            }
+            p {
+                font-size: 18px;
+                color: #333;
+                font-weight: 500;
+                margin-top: 15px;
+            }
+            div {
+                font-size: 24px;
+                color: #005AAA;
+            }
+        }
+        .item>div>span {
+            font-size: 34px;
+        }
+    }
+}
+
+//平台架构
+.framework {
+    background: #f5f5f5;
+    padding-bottom: 70px;
+    .title {
+        padding-bottom: 40px;
+    }
+
+    p {
+        font-size: 14px;
+        color: #6e6e6e;
+        line-height: 2;
+        span {
+            color: #30b5f2;
+        }
+    }
+
+    .info {
+        width: 1200px;
+        background-color: #fff;
+        border-radius: 8px;
+        margin-top: 50px;
+        text-align: center;
+        box-shadow: 1px 1px 8px rgba(223, 223, 223, 0.65);
+        padding-bottom: 40px;
+        padding-top: 40px;
+        img {
+            // display: inline-block;
+        }
+    }
+}
+
+//平台能力
+.processing {
+    background: #fff;
+    padding-bottom: 70px;
+    .divclear {
+        width: 100%;
+        height: 0;
+        clear: both;
+    }
+
+    .info {
+        width: 100%;
+        img {
+            display: inline-block;
+        }
+        .div {
+            float: left;
+            width: 200px;
+            height: 60px;
+            box-sizing: border-box;
+            border: 1px solid #e5e5e5;
+            border-left: none;
+            background: #fafafa;
+            text-align: center;
+            cursor: pointer;
+            .topbar {
+                width: 100%;
+                height: 3px;
+                background: transparent;
+            }
+            .tit {
+                line-height: 60px;
+                font-size: 14px;
+                color: #262626;
+            }
+        }
+        .div:nth-child(1) {
+            border-left: 1px solid #e5e5e5;
+            border-top-left-radius: 8px;
+        }
+        .div:nth-child(6) {
+            border-top-right-radius: 8px;
+        }
+        .proactive {
+            border-bottom: 1px solid #fff;
+            background: #fff;
+            z-index: 9;
+            .topbar {
+                // background: #28b6ea;
+            }
+        }
+    }
+
+    .itembox {
+        box-sizing: border-box;
+        border: 1px solid #e5e5e5;
+        border-top: 0;
+        width: 100%;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+        .item {
+            position: relative;
+            padding: 20px 50px 0;
+            height: 140px;
+            width: 33.33%;
+            box-sizing: border-box;
+            text-align: left;
+            float: left;
+            cursor: pointer;
+            transition: all .3s;
+            -webkit-transition: all .3s;
+            -moz-transition: all .3s;
+            -o-transition: all .3s;
+            .pic {
+                width: 48px;
+                height: 48px;
+                margin-top: 20px;
+            }
+            .itemtit {
+                position: absolute;
+                font-size: 18px;
+                color: #262626;
+                top: 40px;
+                left: 130px;
+                width: 200px;
+                text-align: left;
+            }
+            .itemdes {
+                position: absolute;
+                font-size: 14px;
+                color: #6e6e6e;
+                top: 70px;
+                left: 130px;
+                width: 200px;
+                text-align: left;
+            }
+        }
+        .item:hover {
+            .itemtit {
+                // color: #12b1d9;
+            }
+            .itemdes {
+                // color: #12b1d9;
+            }
+        }
+    }
+
+    .item6box {
+        .item {
+            width: 50%;
+            img {
+                display: inline-block;
+                margin-right: 50px;
+                margin-top: 20px;
+            }
+            .itemtit {
+                top: 40px;
+                left: 130px;
+                width: 400px;
+                text-align: left;
+            }
+            .itemdes {
+                top: 70px;
+                left: 130px;
+                width: 400px;
+                text-align: left;
+            }
+        }
+    }
+
+    .w {
+        .itembox:nth-child(3) {
+            .item:nth-child(1) {
+                .pic {
+                    background: url("../image/cloudService/1-1.png") no-repeat;
+                }
+            }
+            .item:nth-child(1):hover {
+                .pic {
+                    background: url("../image/cloudService/01-1.png") no-repeat;
+                }
+            }
+            .item:nth-child(2) {
+                .pic {
+                    background: url("../image/cloudService/1-2.png") no-repeat;
+                }
+            }
+            .item:nth-child(2):hover {
+                .pic {
+                    background: url("../image/cloudService/01-2.png") no-repeat;
+                }
+            }
+            .item:nth-child(3) {
+                .pic {
+                    background: url("../image/cloudService/1-3.png") no-repeat;
+                }
+            }
+            .item:nth-child(3):hover {
+                .pic {
+                    background: url("../image/cloudService/01-3.png") no-repeat;
+                }
+            }
+            .item:nth-child(4) {
+                .pic {
+                    background: url("../image/cloudService/1-4.png") no-repeat;
+                }
+            }
+            .item:nth-child(4):hover {
+                .pic {
+                    background: url("../image/cloudService/01-4.png") no-repeat;
+                }
+            }
+            .item:nth-child(5) {
+                .pic {
+                    background: url("../image/cloudService/1-5.png") no-repeat;
+                }
+            }
+            .item:nth-child(5):hover {
+                .pic {
+                    background: url("../image/cloudService/01-5.png") no-repeat;
+                }
+            }
+            .item:nth-child(6) {
+                .pic {
+                    background: url("../image/cloudService/1-6.png") no-repeat;
+                }
+            }
+            .item:nth-child(6):hover {
+                .pic {
+                    background: url("../image/cloudService/01-6.png") no-repeat;
+                }
+            }
+            .item:nth-child(7) {
+                .pic {
+                    background: url("../image/cloudService/1-7.png") no-repeat;
+                }
+            }
+            .item:nth-child(7):hover {
+                .pic {
+                    background: url("../image/cloudService/01-7.png") no-repeat;
+                }
+            }
+            .item:nth-child(8) {
+                .pic {
+                    background: url("../image/cloudService/1-8.png") no-repeat;
+                }
+            }
+            .item:nth-child(8):hover {
+                .pic {
+                    background: url("../image/cloudService/01-8.png") no-repeat;
+                }
+            }
+            .item:nth-child(9) {
+                .pic {
+                    background: url("../image/cloudService/1-9.png") no-repeat;
+                }
+            }
+            .item:nth-child(9):hover {
+                .pic {
+                    background: url("../image/cloudService/01-9.png") no-repeat;
+                }
+            }
+        }
+        .itembox:nth-child(4) {
+            .item:nth-child(1) {
+                .pic {
+                    background: url("../image/cloudService/2-1.png") no-repeat;
+                }
+            }
+            .item:nth-child(1):hover {
+                .pic {
+                    background: url("../image/cloudService/02-1.png") no-repeat;
+                }
+            }
+            .item:nth-child(2) {
+                .pic {
+                    background: url("../image/cloudService/2-2.png") no-repeat;
+                }
+            }
+            .item:nth-child(2):hover {
+                .pic {
+                    background: url("../image/cloudService/02-2.png") no-repeat;
+                }
+            }
+            .item:nth-child(3) {
+                .pic {
+                    background: url("../image/cloudService/2-3.png") no-repeat;
+                }
+            }
+            .item:nth-child(3):hover {
+                .pic {
+                    background: url("../image/cloudService/02-3.png") no-repeat;
+                }
+            }
+            .item:nth-child(4) {
+                .pic {
+                    background: url("../image/cloudService/2-4.png") no-repeat;
+                }
+            }
+            .item:nth-child(4):hover {
+                .pic {
+                    background: url("../image/cloudService/02-4.png") no-repeat;
+                }
+            }
+            .item:nth-child(5) {
+                .pic {
+                    background: url("../image/cloudService/2-5.png") no-repeat;
+                }
+            }
+            .item:nth-child(5):hover {
+                .pic {
+                    background: url("../image/cloudService/02-5.png") no-repeat;
+                }
+            }
+        }
+        .itembox:nth-child(5) {
+            .item:nth-child(1) {
+                .pic {
+                    background: url("../image/cloudService/3-1.png") no-repeat;
+                }
+            }
+            .item:nth-child(1):hover {
+                .pic {
+                    background: url("../image/cloudService/03-1.png") no-repeat;
+                }
+            }
+            .item:nth-child(2) {
+                .pic {
+                    background: url("../image/cloudService/3-2.png") no-repeat;
+                }
+            }
+            .item:nth-child(2):hover {
+                .pic {
+                    background: url("../image/cloudService/03-2.png") no-repeat;
+                }
+            }
+            .item:nth-child(3) {
+                .pic {
+                    background: url("../image/cloudService/3-3.png") no-repeat;
+                }
+            }
+            .item:nth-child(3):hover {
+                .pic {
+                    background: url("../image/cloudService/03-3.png") no-repeat;
+                }
+            }
+            .item:nth-child(4) {
+                .pic {
+                    background: url("../image/cloudService/3-4.png") no-repeat;
+                }
+            }
+            .item:nth-child(4):hover {
+                .pic {
+                    background: url("../image/cloudService/03-4.png") no-repeat;
+                }
+            }
+            .item:nth-child(5) {
+                .pic {
+                    background: url("../image/cloudService/3-5.png") no-repeat;
+                }
+            }
+            .item:nth-child(5):hover {
+                .pic {
+                    background: url("../image/cloudService/03-5.png") no-repeat;
+                }
+            }
+        }
+        .itembox:nth-child(6) {
+            .item:nth-child(1) {
+                .pic {
+                    background: url("../image/cloudService/4-1.png") no-repeat;
+                }
+            }
+            .item:nth-child(2) {
+                .pic {
+                    background: url("../image/cloudService/4-2.png") no-repeat;
+                }
+            }
+            .item:nth-child(3) {
+                .pic {
+                    background: url("../image/cloudService/4-3.png") no-repeat;
+                }
+            }
+            .item:nth-child(4) {
+                .pic {
+                    background: url("../image/cloudService/4-4.png") no-repeat;
+                }
+            }
+            .item:nth-child(5) {
+                .pic {
+                    background: url("../image/cloudService/4-5.png") no-repeat;
+                }
+            }
+            .item:nth-child(6) {
+                .pic {
+                    background: url("../image/cloudService/4-6.png") no-repeat;
+                }
+            }
+            .item:nth-child(1):hover {
+                .pic {
+                    background: url("../image/cloudService/04-1.png") no-repeat;
+                }
+            }
+            .item:nth-child(2):hover {
+                .pic {
+                    background: url("../image/cloudService/04-2.png") no-repeat;
+                }
+            }
+            .item:nth-child(3):hover {
+                .pic {
+                    background: url("../image/cloudService/04-3.png") no-repeat;
+                }
+            }
+            .item:nth-child(4):hover {
+                .pic {
+                    background: url("../image/cloudService/04-4.png") no-repeat;
+                }
+            }
+            .item:nth-child(5):hover {
+                .pic {
+                    background: url("../image/cloudService/04-5.png") no-repeat;
+                }
+            }
+            .item:nth-child(6):hover {
+                .pic {
+                    background: url("../image/cloudService/04-6.png") no-repeat;
+                }
+            }
+        }
+        .itembox:nth-child(7) {
+            .item:nth-child(1) {
+                .pic {
+                    background: url("../image/cloudService/5-1.png") no-repeat;
+                }
+            }
+            .item:nth-child(2) {
+                .pic {
+                    background: url("../image/cloudService/5-2.png") no-repeat;
+                }
+            }
+            .item:nth-child(3) {
+                .pic {
+                    background: url("../image/cloudService/5-3.png") no-repeat;
+                }
+            }
+            .item:nth-child(4) {
+                .pic {
+                    background: url("../image/cloudService/5-4.png") no-repeat;
+                }
+            }
+            .item:nth-child(5) {
+                .pic {
+                    background: url("../image/cloudService/5-5.png") no-repeat;
+                }
+            }
+            .item:nth-child(6) {
+                .pic {
+                    background: url("../image/cloudService/5-6.png") no-repeat;
+                }
+            }
+            .item:nth-child(7) {
+                .pic {
+                    background: url("../image/cloudService/5-7.png") no-repeat;
+                }
+            }
+            .item:nth-child(8) {
+                .pic {
+                    background: url("../image/cloudService/5-8.png") no-repeat;
+                }
+            }
+            .item:nth-child(1):hover {
+                .pic {
+                    background: url("../image/cloudService/05-1.png") no-repeat;
+                }
+            }
+            .item:nth-child(2):hover {
+                .pic {
+                    background: url("../image/cloudService/05-2.png") no-repeat;
+                }
+            }
+            .item:nth-child(3):hover {
+                .pic {
+                    background: url("../image/cloudService/05-3.png") no-repeat;
+                }
+            }
+            .item:nth-child(4):hover {
+                .pic {
+                    background: url("../image/cloudService/05-4.png") no-repeat;
+                }
+            }
+            .item:nth-child(5):hover {
+                .pic {
+                    background: url("../image/cloudService/05-5.png") no-repeat;
+                }
+            }
+            .item:nth-child(6):hover {
+                .pic {
+                    background: url("../image/cloudService/05-6.png") no-repeat;
+                }
+            }
+            .item:nth-child(7):hover {
+                .pic {
+                    background: url("../image/cloudService/05-7.png") no-repeat;
+                }
+            }
+            .item:nth-child(8):hover {
+                .pic {
+                    background: url("../image/cloudService/05-8.png") no-repeat;
+                }
+            }
+        }
+        .itembox:nth-child(8) {
+            .item:nth-child(1) {
+                .pic {
+                    background: url("../image/cloudService/6-1.png") no-repeat;
+                }
+            }
+            .item:nth-child(2) {
+                .pic {
+                    background: url("../image/cloudService/6-2.png") no-repeat;
+                }
+            }
+            .item:nth-child(3) {
+                .pic {
+                    background: url("../image/cloudService/6-3.png") no-repeat;
+                }
+            }
+            .item:nth-child(4) {
+                .pic {
+                    background: url("../image/cloudService/6-4.png") no-repeat;
+                }
+            }
+            .item:nth-child(1):hover {
+                .pic {
+                    background: url("../image/cloudService/06-1.png") no-repeat;
+                }
+            }
+            .item:nth-child(2):hover {
+                .pic {
+                    background: url("../image/cloudService/06-2.png") no-repeat;
+                }
+            }
+            .item:nth-child(3):hover {
+                .pic {
+                    background: url("../image/cloudService/06-3.png") no-repeat;
+                }
+            }
+            .item:nth-child(4):hover {
+                .pic {
+                    background: url("../image/cloudService/06-4.png") no-repeat;
+                }
+            }
+        }
+    }
+}
