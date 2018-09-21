@@ -115,11 +115,21 @@ a {
 .nav .nav-bar ul li a.active {
   color: #30b5f2;
 }
+/* datacenter */
+
+.nav .nav-bar ul{
+  list-style: none;
+}
+
+
+
 .nav .login {
   float: right;
-  margin-top: 16px;
+  /*  数据中心注释 去除hover后出现边框移动的情况 */
+  /* margin-top: 16px; */
+  width: 208px;
 }
-.nav .login a {
+.nav .login>a{
   float: left;
   width: 68px;
   height: 33px;
@@ -129,22 +139,93 @@ a {
   text-align: center;
   font-size: 14px;
   color: #fff;
+  
 }
-.nav .login a:hover:nth-child(1) {
-  color: #30b5f2;
-  border-color: #30b5f2;
+
+.nav .login > a:nth-child(2) {
+  /* 添加数据中心，去除a标签的边框*/
+  /* border: 1px solid #fff; */
+  margin:0 10px;
+  margin-top: 16px;
+  color: #fff;
+  background-color: #30b5f2;
 }
-.nav .login a:hover:nth-child(2) {
-  background-color: #22a8e5;
+/* .nav .login a:nth-child(2) {
+  background-color: #30B5F2;
+} */
+
+/* 数据中心 start*/
+.nav .login .dataCenter{
+  list-style-type: none;
+}
+ul.dataCenter{
+  width: 90px;
+  height: 65px;
+  line-height: 65px;
+  float: left;
+}
+ul.dataCenter li.dataCenterLi{
+  line-height: 65px;
+  height: 65px;
+  display: inline;
+  float: left;
+  box-sizing: border-box;
+  margin-left: 6px;
+}
+ .nav .login a:nth-child(2) {
+   /* background-color: #30B5F2; */
+   box-sizing: border-box;
+   border-radius: 4px;
+   line-height: 33px;
+   text-align: center;
+   font-size: 14px;
+   color: #fff;
+ }
+ ul.dataCenter li.dataCenterLi  > a{
+   color: rgb(255, 255, 255);
+   width: 68px;
+   height: 33px;
+   border: 1px solid rgb(238, 238, 238);
+   display: block;
+   margin: 16px 0;
+   line-height: 33px;
+   text-align: center;
+   border-radius: 4px;
+   font-size: 15px;
+   background-color: rgba(255, 255, 255, 0.2);
+ }
+ ul.dataCenter li.dataCenterLi .icon-down{
+   display: block;
+   width: 10px;
+   float: right;
+   margin: 14px 8px 0 0;
+ }
+ul.dataCenter li.dataCenterLi ul {
+  background-color: rgba(0, 0, 0, 0.1);
+  list-style-type: none;
+  width: 120px;
+  position: relative;
+  top: -2px;
+  left: -25px;
+  z-index: 100;
+  line-height: 40px;
+  display: none;
+}
+ul.dataCenter li.dataCenterLi ul li{
+  clear: both;
+  height: 32px;
+  width: 100%;
+  line-height: 32px;
+  text-align: center;
+  font-size: 14px;
+}
+ul.dataCenter li.dataCenterLi ul li a{
   color: #fff;
 }
-.nav .login a:nth-child(1) {
-  border: 1px solid #fff;
-  margin-right: 10px;
-}
-.nav .login a:nth-child(2) {
-  background-color: #30B5F2;
-}
+
+/* end */
+
+
 .nav .user {
   float: right;
   position: relative;
@@ -299,8 +380,9 @@ a {
   background: url("../image/qrcode.png") center no-repeat;
 }
 .footer p {
+  display: block;
   height: 50px;
-  line-height: 50px;
+  line-height: 26px;
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
   font-size: 14px;

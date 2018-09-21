@@ -1,4 +1,12 @@
 $(function() {
+    // 数据中心切换
+    $(".dataCenterLi").hover(function () {
+        $(this).children("ul").stop().slideDown();
+        
+    }, function () {
+        $(this).children("ul").stop().slideUp();
+    });
+
 
     //banner轮播图
     var mySwiper = new Swiper('.swiper-container', {
