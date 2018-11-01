@@ -1,4 +1,4 @@
-FROM cosmo-doc/base:0.1
+FROM 192.168.2.35/test/doc-base:0.1
 
 COPY . /opt/doc/
 

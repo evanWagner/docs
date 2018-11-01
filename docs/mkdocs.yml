@@ -2,39 +2,69 @@ site_name: COSMOPlat-平台指南
 nav:
 #    - '目录': '目录.md'
     - '基础知识速成':
-        - 'linux':
-            - 'linux-bash': '基础知识/linux/Linux-bash.md'
-            - 'linux-command': '基础知识/linux/Linux-command.md'
-            - 'linux-filesystem': '基础知识/linux/Linux-filesystem.md'
-            - 'linux-shellscript': '基础知识/linux/Linux-shellscript.md'
+        - 'Linux':
+            - 'Linux 的 bash 介绍': '基础知识/linux/Linux-bash.md'
+            - 'Linux 常用指令介绍': '基础知识/linux/Linux-command.md'
+            - 'Linux 的文件系统介绍': '基础知识/linux/Linux-filesystem.md'
+            - 'Linux 的程序化脚本介绍': '基础知识/linux/Linux-shellscript.md'
         - 'Docker':
             - '基础概念': '基础知识/docker/基础概念.md'
+            - 'Windows 中安装指南': '基础知识/docker/docker_windows安装介绍.md'
             - '命令行': '基础知识/docker/命令行.md'
             - '镜像构建和使用': '基础知识/docker/镜像构建和使用.md'
-            - '镜像构建最佳实践': '基础知识/docker/镜像构建最佳实践.md'
+            - '镜像构建最佳实践': '基础知识/docker/镜像构建最佳实践.md'            
         - 'Kubernetes':
-            - 'Kubernetes介绍': '基础知识/kubernetes/Kubernetes介绍.md'
+            - 'Kubernetes 介绍': '基础知识/kubernetes/Kubernetes介绍.md'
             - '基础概念': '基础知识/kubernetes/基础概念.md'
             - '模块介绍': '基础知识/kubernetes/模块介绍.md'
             - '命令行': '基础知识/kubernetes/命令行.md'
             - '操作实践': '基础知识/kubernetes/操作实践.md'
 #    - '开发者平台操作手册': '开发者平台.md'
     - '运维人员指南':
-        - '常见功能场景': '常见功能场景.md'
-    - '常见问题汇总':
-        - '应用上云': '应用上云.md'
-        - '构建镜像': '构建镜像.md'
-        - '控制台': '控制台.md'
-        - 'CI/CD':
-            - '代码集成': '代码集成.md'
-            - '构建部署': '构建部署.md'
+        - '常见功能场景': '运维人员指南/常见功能场景.md'
+    # - '常见问题汇总':
+    #     - '应用上云': '应用上云.md'
+    #     - '构建镜像': '构建镜像.md'
+    #     - '控制台': '控制台.md'
+    #     - 'CI/CD':
+    #         - '代码集成': '代码集成.md'
+    #         - '构建部署': '构建部署.md'
     - '开发人员指南':
-        - '概述': '开发指南/概述.md'
-        - '平台使用手册': '开发指南/平台使用手册.md'
-        - 'SpringCloud微服务docker容器化最佳实践': '开发指南/SpringCloud微服务docker容器化最佳实践.md'
-        - 'python开发者的docker之旅': '开发指南/python开发者的docker之旅.md'
-        - 'php开发者的docker之旅': '开发指南/php开发者的docker之旅.md'
-        - '用docker构建angular前端应用': '开发指南/用docker构建angular前端应用.md'
-
-theme:
+        # - '概述': '开发指南/概述.md'
+        # - '平台使用手册': '开发指南/平台使用手册.md'
+        - 'PaaS 平台开发指南': 
+          - 'PaaS 平台使用手册': '开发指南/PaaS平台使用指南/平台使用手册.md'
+          - 'PaaS 平台应用镜像构建': '开发指南/PaaS平台使用指南/PaaS平台应用镜像构建.md'
+          - 'PaaS 平台应用的部署': '开发指南/PaaS平台使用指南/PaaS平台应用的部署.md'
+          - 'PaaS 平台容器连接': '开发指南/PaaS平台使用指南/PaaS平台容器连接.md'
+        - 'Python 开发指南': 
+          # - 'Python 简介': '开发指南/python/python简介.md'
+          # - 'Python开发者的docker之旅': '开发指南/python/python开发者的docker之旅.md'
+          - 'Python 基础镜像构建': '开发指南/python/python基础镜像构建.md'
+          - 'Python 应用镜像构建': '开发指南/python/python应用镜像构建.md'
+          - 'iPython Notebook 应用构建': '开发指南/python/python_ipython_notebook.md'
+        - 'PHP 开发指南': 
+          # - 'PHP开发者的docker之旅': '开发指南/PHP/php开发者的docker之旅.md'
+          - 'PHP 基础镜像部署': '开发指南/PHP/PHP基础镜像部署.md'
+          - 'PHP 简单应用镜像部署': '开发指南/PHP/PHP简单应用镜像部署.md'
+          - 'PHP + MySQL 的应用镜像部署': '开发指南/PHP/PHP + MySQL 的应用镜像部署.md'
+        - 'Node.js 开发指南':
+          - 'Node.js 的发展历史': '开发指南/nodejs/Nodejs的发展历史.md'
+          - 'Node.js 的应用镜像部署': '开发指南/nodejs/Nodejs开发者的docker之旅.md'
+        - 'Java 开发指南':
+          - 'Java 基础镜像构建': '开发指南/java/tomcat_maven基础镜像构建.md'
+          - 'Java 的jar包应用镜像构建': '开发指南/java/tomcat_jar包应用构建.md'
+          - 'Java 的war包应用镜像构建': '开发指南/java/tomcat_war包应用构建.md'
+          - 'SpringCloud 微服务应用构建': '开发指南/java/SpringCloud微服务docker容器化最佳实践.md'
+        - '其他语言的开发指南': 
+          - 'Shell 的应用构建': '开发指南/其他应用/shell语言demo docker镜像构建.md'
+          - 'C 语言的应用构建': '开发指南/其他应用/C语言 demo docker镜像构建.md'
+          - 'golang 的应用构建': '开发指南/其他应用/golang语言 demo docker镜像构建.md'
+          - 'Perl 的应用构建': '开发指南/其他应用/Perl语言 demo docker镜像构建.md'
+          - 'Ruby 的应用构建': '开发指南/其他应用/Ruby语言 demo docker镜像构建.md'
+          - 'HTML 的应用构建': '开发指南/其他应用/HTML语言demo docker镜像构建.md'
+          - 'Scala 的应用构建': '开发指南/其他应用/Scala语言 demo docker镜像构建.md'
+          - 'lua 语言的应用构建': '开发指南/其他应用/lua语言demo docker镜像构建.md'
+          - 'AngularJS 前端应用构建': '开发指南/其他应用/用docker构建angular前端应用.md'
+theme:  
   name: 'material'
