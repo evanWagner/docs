@@ -12,7 +12,7 @@ nav:
             - 'Windows 中安装指南': '基础知识/docker/docker_windows安装介绍.md'
             - '命令行': '基础知识/docker/命令行.md'
             - '镜像构建和使用': '基础知识/docker/镜像构建和使用.md'
-            - '镜像构建最佳实践': '基础知识/docker/镜像构建最佳实践.md'            
+            - '镜像构建最佳实践': '基础知识/docker/镜像构建最佳实践.md'
         - 'Kubernetes':
             - 'Kubernetes 介绍': '基础知识/kubernetes/Kubernetes介绍.md'
             - '基础概念': '基础知识/kubernetes/基础概念.md'
@@ -32,18 +32,18 @@ nav:
     - '开发人员指南':
         # - '概述': '开发指南/概述.md'
         # - '平台使用手册': '开发指南/平台使用手册.md'
-        - 'PaaS 平台开发指南': 
+        - 'PaaS 平台开发指南':
           - 'PaaS 平台使用手册': '开发指南/PaaS平台使用指南/平台使用手册.md'
           - 'PaaS 平台应用镜像构建': '开发指南/PaaS平台使用指南/PaaS平台应用镜像构建.md'
           - 'PaaS 平台应用的部署': '开发指南/PaaS平台使用指南/PaaS平台应用的部署.md'
           - 'PaaS 平台容器连接': '开发指南/PaaS平台使用指南/PaaS平台容器连接.md'
-        - 'Python 开发指南': 
+        - 'Python 开发指南':
           # - 'Python 简介': '开发指南/python/python简介.md'
           # - 'Python开发者的docker之旅': '开发指南/python/python开发者的docker之旅.md'
           - 'Python 基础镜像构建': '开发指南/python/python基础镜像构建.md'
           - 'Python 应用镜像构建': '开发指南/python/python应用镜像构建.md'
           - 'iPython Notebook 应用构建': '开发指南/python/python_ipython_notebook.md'
-        - 'PHP 开发指南': 
+        - 'PHP 开发指南':
           # - 'PHP开发者的docker之旅': '开发指南/PHP/php开发者的docker之旅.md'
           - 'PHP 基础镜像部署': '开发指南/PHP/PHP基础镜像部署.md'
           - 'PHP 简单应用镜像部署': '开发指南/PHP/PHP简单应用镜像部署.md'
@@ -56,15 +56,15 @@ nav:
           - 'Java 的jar包应用镜像构建': '开发指南/java/tomcat_jar包应用构建.md'
           - 'Java 的war包应用镜像构建': '开发指南/java/tomcat_war包应用构建.md'
           - 'SpringCloud 微服务应用构建': '开发指南/java/SpringCloud微服务docker容器化最佳实践.md'
-        - '其他语言的开发指南': 
+        - '其他语言的开发指南':
           - 'Shell 的应用构建': '开发指南/其他应用/shell语言demo docker镜像构建.md'
           - 'C 语言的应用构建': '开发指南/其他应用/C语言 demo docker镜像构建.md'
-          - 'golang 的应用构建': '开发指南/其他应用/golang语言 demo docker镜像构建.md'
+          - 'Golang 的应用构建': '开发指南/其他应用/golang语言 demo docker镜像构建.md'
           - 'Perl 的应用构建': '开发指南/其他应用/Perl语言 demo docker镜像构建.md'
           - 'Ruby 的应用构建': '开发指南/其他应用/Ruby语言 demo docker镜像构建.md'
           - 'HTML 的应用构建': '开发指南/其他应用/HTML语言demo docker镜像构建.md'
           - 'Scala 的应用构建': '开发指南/其他应用/Scala语言 demo docker镜像构建.md'
-          - 'lua 语言的应用构建': '开发指南/其他应用/lua语言demo docker镜像构建.md'
+          - 'Lua 语言的应用构建': '开发指南/其他应用/lua语言demo docker镜像构建.md'
           - 'AngularJS 前端应用构建': '开发指南/其他应用/用docker构建angular前端应用.md'
-theme:  
+theme:
   name: 'material'
