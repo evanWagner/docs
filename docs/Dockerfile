@@ -1,4 +1,4 @@
-FROM daocloud.io/daocloud/cosmo-doc-base:0.2
+FROM daocloud.io/daocloud/cosmo-doc-base:0.3
 
 COPY . /opt/doc/
 
