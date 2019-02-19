@@ -80,7 +80,7 @@ RUN apt-get update \
     && sed -i 's/variables_order.*/variables_order = "EGPCS"/g' \
             /etc/php5/apache2/php.ini \
 ```
-修改 PHP 配置文件按，调整 PHP 处理 Request 里变量提交值的顺序，解析顺序从左到右，后解析新值覆盖旧值,默认设定为 EGPCS（ENV/GET/POST/COOKIE/SERVER）
+修改 PHP 配置文件，调整 PHP 处理 Request 里变量提交值的顺序，解析顺序从左到右，后解析新值覆盖旧值,默认设定为 EGPCS（ENV/GET/POST/COOKIE/SERVER）
 ```
     && mkdir -p /app && rm -rf /var/www/html && ln -s /app /var/www/html
 ```

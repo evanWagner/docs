@@ -2,7 +2,7 @@
 >目标：用 Docker 的方式搭建一个 IPython Notebook 应用  
 
 #### 前言
-Python 家族成员繁多，解决五花八门的业务需求。这里将通过 Python 明星项目 IPython Notebook，使其容器化，让大家掌握基础的 Docker 使用方法。  
+Python 家族成员繁多，能够解决五花八门的业务需求。这里将通过 Python 明星项目 IPython Notebook，使其容器化，让大家掌握基础的 Docker 使用方法。  
 > IPython Notebook 目前已经成为用 Python 做教学、计算、科研的一个重要工具。  
   
 #### Docker 化应用的关键元素  
@@ -32,7 +32,7 @@ CMD ["jupyter","notebook","--no-browser","--allow-root"]
 ```
 FROM python:3.6
 ```
-选择 Python 2.7 版本为我们依赖的系统镜像。  
+选择 Python 3.6 版本为我们依赖的系统镜像。  
  
 ```
 RUN mkdir -p /app
@@ -65,7 +65,7 @@ CMD ["jupyter","notebook","--no-browser","--allow-root"]
 # pip requirements  
 ipython[all]  
 ```
-我们将 IPython 所需的依赖写成一个文件，并通过 Dockerfile 中的 ADD requirements.txt requirements.txt 将 requirements.txt 放入镜像 ，之后在通过 Dockerfile 中的 RUN pip install -r requirements.txt 进行依赖的安装。  
+我们将 IPython 所需的依赖写成一个文件，并通过 Dockerfile 中的 ADD requirements.txt，将 requirements.txt 放入镜像 ，之后在通过 Dockerfile 中的 RUN pip install -r requirements.txt 进行依赖的安装。  
 
 
 #### 启动容器  
@@ -73,17 +73,17 @@ ipython[all]
 
 或者可以在Docker环境中运行下面的命令构建 Python 应用镜像： 
 
-通过指令建立镜像，命名为 ipython/notebook:1.0.0
+通过指令建立镜像，命名为 ipython-notebook:1.0.0
 ```
-docker build -t registry.cosmoplat.com/test/ipython/notebook:1.0.0
+docker build -t registry.cosmoplat.com/test/ipython-notebook:1.0.0
 ```  
 
 通过以下指令启动容器
 ```
-docker run -d -p 8888:8888  registry.cosmoplat.com/test/ipython/notebook:1.0.0  
+docker run -d -p 8888:8888  registry.cosmoplat.com/test/ipython-notebook:1.0.0  
 ```   
 
 **注意**：我们将初始登录密码以环境变量的形式传入容器并告知应用。     
 
-打开游览器，访问 8888 端口，就可以看到 IPython Notebook 了。
+打开浏览器，访问 http://127.0.0.1:8888 端口，就可以看到 IPython Notebook 了。
 ![]( ../../images/ipythonnotebook.jpg)  

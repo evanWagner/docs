@@ -18,7 +18,7 @@ $ git clone https://github.com/ry/node.git
 API 开始大面积进入 Stable 和 Locked 状态时，大批开发者便开始使用 Node.js 干各种事情，这个区间是 v0.6~v0.8 之间。Joyent 公司收购了 Node.js 原开发团队也是推动力之一。  
 
 #### 为什么后来又出现了 Io.js？现在又到哪里去了？  
-Io.js 的出现是因为在 Node.js 的核心开发者群体中，出现了一些不太友好的性别歧视事件，导致核心开发组与 Joyent 公司决裂，直接从 Node.js 的 GitHub 代码库 Fork 了一个出来，并重命名为 Io.js。而很长一段时间内，Io.js 确实 Node.js 世界真正的主导，因为无论是核心开发者还是核心用户群都聚集在 Io.js 社区中，而且 Io.js 很大的优势便是原生开启 ES Harmony 支持模式，而不需要使用「--harmony 」。  
+Io.js 的出现是因为在 Node.js 的核心开发者群体中，出现了一些不太友好的性别歧视事件，导致核心开发组与 Joyent 公司决裂，直接从 Node.js 的 GitHub 代码库 Fork 了一个出来，并重命名为 Io.js。而很长一段时间内，Io.js 却是 Node.js 世界真正的主导，因为无论是核心开发者还是核心用户群都聚集在 Io.js 社区中，而且 Io.js 很大的优势便是原生开启 ES Harmony 支持模式，而不需要使用「--harmony 」。  
 合久必分，分久必合。如今 Io.js 社区已经与 Joyent 公司达成共识，代码库再次回归到 Node.js 主线中来，Node.js 开发组委会也由原 Io.js 开发组和 Joyent 公司联合建立。  
 
 #### NPM 现在是怎样的一种存在？  

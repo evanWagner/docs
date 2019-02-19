@@ -1,5 +1,5 @@
 ## Node.js 的应用镜像部署
-Node.js 官方在 Docker 成为主流容器化解决方案之后，便随即发布了官方的 Node.js Docker 镜像，并保持著与最新的 Node.js 版本同步更新，这说明了 Docker 已成为了大部份 Web 工程师中的一把利剑。  
+Node.js 官方在 Docker 成为主流容器化解决方案之后，便随即发布了官方的 Node.js Docker 镜像，并保持着与最新的 Node.js 版本同步更新，这说明了 Docker 已成为了大部份 Web 工程师中的一把利剑。  
 接下来，我们以一个简单的例子，看看要如何使用 Node.js Docker 镜像，将我们的 Node.js 应用 Dockerify，走上容器化之路。
 
 ####  准备 Node.js 程序  

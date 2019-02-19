@@ -7,7 +7,7 @@
 
 #### 编写Dockerfile
 
-    FROM 10.138.114.101/cosmoplat/openjdk:8-jdk-alpine
+    FROM registry.cosmoplat.com/cosmoplat/openjdk:8-jdk-alpine
     
     RUN mkdir -p /opt/springboot/cosmoplat/demo
     
